@@ -1,4 +1,669 @@
-/*..............................Heading and menu..*/
+@import url('https://fonts.googleapis.com/css?family=Tangerine:100,200,300,400,500,600,700|Lato:100,200,300,400,500,600,700|Roboto:500, 600, 700');
+
+header {
+    position: relative;
+    position: fixed;
+    width: 100vw;
+    height: 5vh;
+    top: 0;
+    background-color: #0f7e8f;
+    color: #fff;
+    display: flex;
+    justify-content: right;
+    align-items: center;    
+    z-index: 1;
+}
+
+header div {
+    padding-right: 2vw;
+    
+}
+
+header div a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 4px gray;
+}
+
+header div a:hover {
+    text-size-adjust: 2em;
+    text-shadow: 2px 2px 8px gray;
+}
+
+/*.......................................title logo......*/
+
+.logo-img {
+    margin: 0;
+    width: auto;
+    height: 15vh;
+    object-fit: contain;
+    position: absolute;
+    position: fixed;
+    z-index: 2;
+    left: 5vw;
+    top: 0;
+    box-shadow: 0px 0px 5px #aaaaaa;
+}
+
+/*.......................................main grid settings......
+
+main {
+    display: grid;
+    grid-template-rows: 95vh auto 10em;
+    grid-template-columns: 1fr 5fr 2fr 1fr;
+    grid-template-areas: 
+    "hero hero hero hero"
+    ". info sidebar ."
+    "footer footer footer footer";
+}
+
+/*.....................................Hero Image, Title, Nav and Subscribe....*/
+
+@-webkit-keyframes backgroundScroll {
+    from {
+        background-size: cover;
+        background-position: left;
+    }
+
+    to {
+        background-size: cover;
+        background-position: right;
+    }
+}
+
+@keyframes backgroundScroll {
+    from {
+        background-size: cover;
+        background-position: left;
+    }
+
+    to {
+        background-size: cover;
+        background-position: right;
+    }
+}
+
+.background-hero-img {
+    width: 100vw;
+    height: 95vh;
+    background: url("../images/view1.jpeg") no-repeat;
+    -webkit-animation: backgroundScroll 120s linear infinite;
+    animation: backgroundScroll 120s linear infinite;
+    position: absolute;
+    position: fixed;
+    left: 0;
+    top: 5vh;
+    z-index: -1;
+     
+    }
+
+
+
+
+
+
+
+/*.......................................blank section.........*/
+
+.blank {
+    width: 100vw;
+    height: 82vh;
+    margin: 0;
+}
+
+.title {
+    color: #fff;
+    font-family: tangerine, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100vw;
+    height: 18vh;
+    margin: 0;
+    position: absolute;
+    position: fixed;
+    z-index: 1;
+    top: 5vh;
+    background-color: rgb(240, 248, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3vh;
+}
+
+.title-text {
+    
+    font-size: 7vw;
+    text-shadow: 2px 2px 4px #726a6a;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+nav {
+    width: 100vw;
+    height: auto;
+    background-color: rgb(240, 248, 255, 0.8);
+    position: relative;
+    position: fixed;
+    top: 23vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+nav h5 {
+    margin: 0;
+    font-weight: 300;
+    text-transform:uppercase;
+    color: rgb(15, 126, 143, 0.8);
+    padding: 5px 25px;
+    text-align: center;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+/*.......................................subscribe messages and button..........*/
+
+.subscribe {
+    width: 100vw;
+    height: auto;
+    background-color: rgb(240, 248, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe h2 {
+    font-family: tangerine, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 4px #726a6a;
+    margin: 0;
+    text-align: center;
+}
+
+.subscribe button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+/*.......................................info section.........*/
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+  }
+
+.poi-grid {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    background: #aaaaaa;
+    display: grid;
+    gap: 1.5rem;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+        'terrace-view'
+        'rspca-monument'
+        'terrace-field'
+        'terrace-gate'
+        'old-father-thames'
+        'bulbous-betty'
+        'summer-house'
+        'terrace-gardens';
+    
+    padding-block: 2rem;
+    width: min (95%, 70rem);
+    margin-inline: auto;
+}
+
+
+.poi {
+    font-size: var(--fs-400);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem;
+    background-color: #0f7e8f;
+    color: #fff;
+}
+
+.poi:nth-child(1) {
+    grid-area: terrace-view;
+}
+
+.poi:nth-child(2) {
+    grid-area: rspca-monument;
+}
+
+.poi:nth-child(3) {
+    grid-area: terrace-field;
+}
+
+.poi:nth-child(4) {
+    grid-area: terrace-gate;
+}
+
+.poi:nth-child(5) {
+    grid-area: old-father-thames;
+}
+
+.poi:nth-child(6) {
+    grid-area: bulbous-betty;
+}
+
+.poi:nth-child(7) {
+    grid-area: summer-house;
+}
+
+.poi:nth-child(8) {
+    grid-area: terrace-gardens;
+}
+
+@media screen and (min-width: 33em) {
+    .poi-grid { 
+        grid-template-areas: 
+        'terrace-view rspca-monument'
+        'terrace-field terrace-gate'
+        'old-father-thames bulbous-betty'
+        'summer-houseterrace-gardens';}
+}
+
+@media screen and (min-width: 54em) {
+    .poi-grid { 
+        grid-template-areas: 
+        "terrace-view rspca-monument terrace-field" 
+        "terrace-gate old-father-thames" 
+        "bulbous-betty summer-house terrace-gardens";}
+}
+
+@media screen and (min-width: 75em) {
+    .poi-grid { 
+        grid-template-areas: 
+        "terrace-view rspca-monument terrace-field terrace-gate" 
+        "old-father-thames bulbous-betty summer-house terrace-gardens";}
+}
+
+.poi img {
+    height: 50%;
+    aspect-ratio: 6/4;
+}
+
+.poi .location {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-400);
+    line-height: 1;
+}
+
+.poi .author {
+    font-size: var(--fs-300);
+    opacity: 0.5;
+    font-style: italic;
+}
+
+.poi > p {
+    font-size: var(--fs-500);
+    line-height: 1.2;
+}
+
+/*.......................................poi light boxes and photos...*/
+
+.row > .column {
+    padding: 0 8px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Create four equal columns that floats next to eachother */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 20;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Caption text */
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  img.demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  
+
+
+
+
+.portfolio {
+    margin-top: 28vh;
+    display: grid;
+    height: auto;
+    grid-template-rows: repeat(8, 100px);
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+.portfolio-item {
+    background: lightcyan;
+    color: light-gray;
+    font-weight: font-bold;
+    display: flex;
+    /*justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    background-size: cover;
+    background-position: top left;*/
+    transition: all ease-in-out 300ms;
+    position: relative;
+    
+  }
+    
+.portfolio-item.small {
+      grid-row: span 1;
+      grid-column: span 1;
+    }
+    
+.portfolio-item.medium {
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+    
+.portfolio-item.large {
+      grid-row: span 3;
+      grid-column: span 3;
+    }
+    
+.portfolio-item.tall {
+      grid-row: span 3;
+      grid-column: span 2;
+    }
+    
+.portfolio-item.wide {
+      grid-row: span 2;
+      grid-column: span 3;
+    }
+      
+.portfolio-item:hover {
+      color: white;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.85);
+    }
+  
+  
+  .two {
+    background-image: url(//unsplash.it/800/600);
+    
+    &::before {
+      content: '';
+      display: block;
+      background: $black;
+      opacity: 0.8;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transition: all ease-in-out 300ms;
+      z-index: -1;
+    }
+    
+    &:hover::before {
+      opacity: 0.2;
+    }
+  }
+  
+
+
+.info {
+    background: pink;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    
+    
+}
+
+.info-card {
+    background: lightblue;
+    height: auto;
+    width: 1fr;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 3em;
+}
+
+.card-title {
+    background: antiquewhite;
+    color: darkblue;
+    margin: 0;
+}
+
+.card-img {
+    grid-area: img;
+    background: pink;
+
+}
+
+.card-title {
+    grid-area: title;
+    background: lightblue;
+}
+
+.card-content {
+    grid-area: content;
+    background: lightgreen;
+}
+
+aside {
+    grid-area: sidebar;
+    background: darkgrey;
+    padding: 1.5em;
+}
+
+
+
+/*..............................header - brand & socials..*/
+
+
+
+
+
+
+    
+}
+
+/*................................Welcome Section.........
+
+.welcome {
+    background-color: aliceblue;
+    min-height: 100vh;
+    width: 100vw;
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome div {
+    background-color: lightblue;
+}
+
+/
+
+
+
+
+
+/*.............................home section...........
+
+#home {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-rows: 25vh 40vh 30vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: ". title ." "see stay go" ". subscribe .";
+}
+
+
+
+
+/*.............................pano-view hero image...
+
+
+
+/*.............................header logo..........
+
+.logo-nav-subs_container {
+    height: 95vh;
+    width: 100vw;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    max-height: 25%;
+    max-width: 50%;
+    object-fit: scale-down;
+}
+
+
+.home-menu {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div .menu {
+    max-width: 284px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+  }
+
+
+
+
+/*..............................Richmond Hill Heading and nav..
 
 h1 {
     text-align: left;
@@ -24,54 +689,96 @@ h1 {
 }
 
 #menu li {
-    float: right;
+    float: ;
     margin-right: 40px;
 }
 
-#menu a {
-    text-decoration: none;
-    color: white;
-    text-shadow: 1px 1px 4px gray;
-}
 
-#menu a:hover {
-    text-shadow: 2px 2px 8px rgb(85, 128, 94);
-}
 
 .active {
     text-shadow: 2px 2px 8px rgb(85, 128, 94);
 }
 
+/*..............................Navigation tiles - Sights, Tastes, & Stays ..
 
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
 
-/*..............................Hero image and animation..*/
+#sights-tastes-stay {
+    margin: 0;
+    display: flex;
+    
+}
+
+.square-lg {
+    list-style-type: none;
+    border: 5vw;
+    min-width: 20vw;
+    min-height: 20vw;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+
+#sights {
+    background: url("../images/sights.png");
+    background-position: center;
+    
+}
+
+#tastes {
+    background: url("../images/tastes.png");
+    background-position: center;
+}
+
+#ßstay {
+    background: url("../images/stay.png");
+    background-position: center;
+}
+
+/*..............................Hero image and animation..
 
 #hero-image {
     height: 40vh;
     width: 60vw;
 }
 
-@-webkit-keyframes backgroundScroll {
-from {background-position: 0 0;}
-to {background-position: -1871px 0;} }
+*/
 
-@keyframes backgroundScroll {
-from {background-position: 0 0;}
-to {background-position: -1871px 0;} }
+footer {
+    width: 100vw;
+    height: 6vh;
+    background-color: #0f7e8f;
+    color: #fff;
+    position: absolute;
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}    
 
-#view-scroll {
-    height: 80vh;
-    width: 80vw;
-    margin-left: 10vw;
-    margin-top: 10vh;
-    box-shadow: 5px 10px 8px #888888;
-    background: url("../images/view1.jpeg") no-repeat;
-    -webkit-animation: backgroundScroll 120s linear infinite;
-    animation: backgroundScroll 120s linear infinite;
-    object-fit: scale-down;
- }
+footer div a {
+    text-transform: none;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 4px gray;
+}
 
-
+footer div a:hover {
+    text-size-adjust: 2em;
+    text-shadow: 2px 2px 8px gray;
+}
 
 
 
