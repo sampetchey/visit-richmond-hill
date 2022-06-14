@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="
+    position: relative;
+    min-height: 100%;">
 
 <head>
   <meta charset="UTF-8">
@@ -17,7 +19,7 @@
 <body>
   <header>
 
-    <div>CONNECT WITH US |</div>
+    <div class="connect">CONNECT WITH US |</div>
     <div>
       <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
     </div>
@@ -32,104 +34,184 @@
 
 
   <div>
-    <a href="index.html"><img src="assets/images/visitguide_logo.png" alt="Visit Guide Richmond Hill logo"
+    <a href="#richmond-hill"><img src="assets/images/visitguide_logo.png" alt="Visit Guide Richmond Hill logo"
         class="logo-img"></a>
   </div>
 
-
-
   <div class="title">
     <div>
-      <h1 class="title-text">Richmond Hill</h1>
+      <a href="#richmond-hill">
+        <h1 class="title-text">Richmond Hill</h1>
+      </a>
     </div>
   </div>
 
   <nav>
-    <a href="poi.html">
+    <a href="#places-of-interest">
       <h5>Places of Interest</h5>
     </a>
-    <a href="#">
+    <a href="#food-and-accommodation">
       <h5>Food and Accommodation</h5>
     </a>
-    <a href="#">
+    <a href="#travel">
       <h5>Travel</h5>
     </a>
   </nav>
-  <aside>
-    <div class="background-hero-img">
-    </div>
-  </aside>
-  
-  <section>
+
+
+  <div class="background-hero-img">
+  </div>
+
+
+  <section id="richmond-hill">
     <div class="blank">
 
     </div>
     <div class="subscribe">
       <div>
-        <h2>Subscribe to our newsletter</h2>
-        <button>Subscribe</button>
+        <button>Subscribe to our newsletter</button>
       </div>
     </div>
   </section>
+
+  <section id="places-of-interest">
+    <div class="section-title">
+
+    </div>
+
     <div class="poi-grid">
-      <div class="poi">
-        <div class="flex">
-          <h2>Terrace View</h2>
-          <p>
-            In all my travels I never clapt eyes<br>
-            on a more beauiful spot than this<br>
-            Here would I live and here would I die
-          </p>
-          <div class="row">
-            <div class="column">
-              <img src="assets/images/terrace-view.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-            </div>
-            <div class="column">
-              <img src="aassets/images/terrace-view.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-            </div>
-            <div class="column">
-              <img src="assets/images/terrace-view.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
-            </div>
-          </div>
-        </div>
 
-        
-        
+      <div class="poi terrace-view">
+        <h2>Terrace View</h2>
+        <p>
+          In all my travels I never clapt eyes<br>
+          on a more beauiful spot than this<br>
+          Here would I live and here would I die
+        </p>
+      </div>
+      <div class="poi rspca-monument">
+        <h2>RSPCA Monument</h2>
+        <p>
+          In all my travels I never clapt eyes<br>
+          on a more beauiful spot than this<br>
+          Here would I live and here would I die
+        </p>
+      </div>
+      <div class="poi terrace-field">
+        <h2>Terrace Field</h2>
+        <p>
+          In all my travels I never clapt eyes<br>
+          on a more beauiful spot than this<br>
+          Here would I live and here would I die
+        </p>
+      </div>
+      <div class="poi summer-house">
+        <h2>Summer House</h2>
+        <p>
+          In all my travels I never clapt eyes<br>
+          on a more beauiful spot than this<br>
+          Here would I live and here would I die
+        </p>
+      </div>
+      <div class="poi river-thames">
+        <h2>River Thames</h2>
+        <p>
+          In all my travels I never clapt eyes<br>
+          on a more beauiful spot than this<br>
+          Here would I live and here would I die
+        </p>
+      </div>
+      <div class="poi old-father-thames">
+        <h2>Old Father Thames</h2>
+        <p>
+          In all my travels I never clapt eyes<br>
+          on a more beauiful spot than this<br>
+          Here would I live and here would I die
+        </p>
+      </div>
+      <div class="poi bulbous-betty">
+        <h2>Bulbous Betty</h2>
+        <p>
+          In all my travels I never clapt eyes<br>
+          on a more beauiful spot than this<br>
+          Here would I live and here would I die
+        </p>
+      </div>
+      <div class="poi terrace-gardens">
+        <h2>Terrace Gardens</h2>
+        <p>
+          In all my travels I never clapt eyes<br>
+          on a more beauiful spot than this<br>
+          Here would I live and here would I die
+        </p>
+      </div>
 
+    </div>
+  </section>
+
+  <section class="twickenham-outer">
+    <div class="background-twickenham-img">
+    </div>
+  </section>
+
+
+  <section id="food-and-accommodation">
+    <div class="section-title">
+      <h1>Food and Accommodation</h1>
+    </div>
+    <div class="food-box"></div>
+    <div class="food">
+      <a href="#">
+        <h3>Garden Cafe</h3>
+      </a>
+
+    </div>
+    <div class="food">
+      <a href="#">
+        <h3>Richmond Hill Hotel 1</h3>
+      </a>
+
+    </div>
+    <div class="food">
+      <a href="#">
+        <h3>Richmond Hill Hotel 2</h3>
+      </a>
+    </div>
+    <div class="food">
+      <a href="#">
+        <h3>Richmond Hill Hotel 3</h3>
+      </a>
+
+    </div>
+  </section>
+
+  <section id="travel">
+    <div class="section-title">
+      <h1>Travel</h1>
+    </div>
+    <div class="travel-box">
+      <div class="travel scooter">
+        <a href="#">
+          <h3>Scooter</h3>
+        </a>
+      </div>
+      <div class="travel bus-train">
+        <a href="#">
+          <h3>Bus and Train</h3>
+        </a>
+      </div>
+      <div class="travel car">
+        <a href="#">
+          <h3>Car</h3>
+        </a>
       </div>
     </div>
-
-  <section>
-
   </section>
-
-  <section>
-    
-  </section>
-
-  <section>
-    
-  </section>
-    <div class="info-titles">
-      <h2>Points of Interest</h2>
-    </div>
-    <div class="info-titles">
-      <h2>Food and Accommodation</h2>
-    </div>
-    <div class="info-titles">
-      <h2>Travel</h2>
-    </div>
-  
-
 
   <footer>
-
     <div><a href="#" target="_blank">about</a></div>
     <div><a href="#" target="_blank">terms and conditions</a></div>
     <div><a href="#" target="_blank">FAQ</a></div>
-
-
-
   </footer>
 
 
