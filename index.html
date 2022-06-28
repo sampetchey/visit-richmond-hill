@@ -32,34 +32,36 @@
 
   </header>
 
-
   <div>
     <a href="#richmond-hill"><img src="assets/images/visitguide_logo.png" alt="Visit Guide Richmond Hill logo"
         class="logo-img"></a>
   </div>
 
-  <div class="title">
-    <div>
+  <section>
+    <div class="title">
       <a href="#richmond-hill">
         <h1 class="title-text">Richmond Hill</h1>
       </a>
     </div>
-  </div>
 
-  <nav>
-    <a href="#places-of-interest">
-      <h5>Places of Interest</h5>
-    </a>
-    <a href="#food-and-accommodation">
-      <h5>Food and Accommodation</h5>
-    </a>
-    <a href="#travel">
-      <h5>Travel</h5>
-    </a>
-  </nav>
+    <nav>
+      <a href="#places-of-interest">
+        <h5>Places of Interest</h5>
+        <i class="fa-solid fa-location-dot"></i>
+      </a>
+      <a href="#food-and-accommodation">
+        <h5>Food and Accommodation</h5>
+        <i class="fa-solid fa-utensils"></i>
+      </a>
+      <a href="#travel">
+        <h5>Travel</h5>
+        <i class="fa-solid fa-bicycle"></i>
+      </a>
+    </nav>
+  </section>
 
 
-  <div class="background-hero-img">
+  <div id="view1" class="background-hero-img">
   </div>
 
 
@@ -69,120 +71,274 @@
     </div>
     <div class="subscribe">
       <div>
-        <button>Subscribe to our newsletter</button>
+        <button class="open-button" onclick="openForm()">Subscribe to our newsletter</button>
       </div>
     </div>
+
+
+    <div class="form-popup" id="subscribe-form">
+      <form action="/action_page.php" class="form-container">
+        <h4>Subscribe to VisitGuide</h4>
+
+        <label for="fname">First Name</label>
+        <input id="fname" type="text" name="last_name" required>
+
+        <label for="lname">Last Name</label>
+        <input id="lname" type="text" name="last_name" required>
+
+        <label for="email">Email Address</label>
+        <input id="email" type="email" name="email_address" required>
+
+        <button type="subscribe" class="btn" value="subscribe">Subscribe</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+      <script>
+        function openForm() {
+          document.getElementById("subscribe-form").style.display = "block";
+        }
+
+        function closeForm() {
+          document.getElementById("subscribe-form").style.display = "none";
+        }
+      </script>
+
   </section>
 
   <section id="places-of-interest">
     <div class="section-title">
-
     </div>
 
-    <div class="poi-grid">
 
-      <div class="poi terrace-view">
-        <h2>Terrace View</h2>
-        <p>
-          In all my travels I never clapt eyes<br>
-          on a more beauiful spot than this<br>
-          Here would I live and here would I die
-        </p>
+
+    <div class="grid poi-grid">
+      <div class="poi-container">
+        <button type="button" class="collapsible terrace-view">
+          <h4 class="poi-name">Terrace View</h4>
+        </button>
+        <div class="content">
+          <p>The main view point from Richmond Hill across the River Thames. Sit and relax on the benches, stroll along
+            the promenade, shelter under the shade of grand oak trees.
+            A lively community mixes with nature and tranquility. </p>
+        </div>
       </div>
-      <div class="poi rspca-monument">
-        <h2>RSPCA Monument</h2>
-        <p>
-          In all my travels I never clapt eyes<br>
-          on a more beauiful spot than this<br>
-          Here would I live and here would I die
-        </p>
+
+      <div class="poi-container">
+        <button type="button" class="collapsible rspca-monument">
+          <h4 class="poi-name">RSPCA Monument</h4>
+        </button>
+        <div class="content">
+          <p>
+            What is now a monument to the Royal Society for the Prevention of Cruelty to Animals (RSPCA) 
+            used to be a water fountain for the purpose of prividing a drink for horses who had pulled their 
+            passengers and carriages up the hill.
+          </p>
+        </div>
       </div>
-      <div class="poi terrace-field">
-        <h2>Terrace Field</h2>
-        <p>
-          In all my travels I never clapt eyes<br>
-          on a more beauiful spot than this<br>
-          Here would I live and here would I die
-        </p>
+
+      <div class="poi-container">
+        <button type="button" class="collapsible terrace-field">
+          <h4 class="poi-name">Terrace Field</h4>
+        </button>
+        <div class="content">
+          <p>
+            A popular spot for picnics in the long grass, or sledging on a snowy winter's day. 
+            Terrace field is accessed from both the top and bottom of the hill, connected by crossing pathways.
+          </p>
+        </div>
       </div>
-      <div class="poi summer-house">
-        <h2>Summer House</h2>
-        <p>
-          In all my travels I never clapt eyes<br>
-          on a more beauiful spot than this<br>
-          Here would I live and here would I die
-        </p>
+
+      <div class="poi-container">
+        <button type="button" class="collapsible summer-house">
+          <h4 class="poi-name">Summer House</h4>
+        </button>
+        <div class="content">
+          <p>
+            The Summerhouse has existed in this location since 1936, 
+            although it has been rebuilt several times. 
+            The current structure was restored by Richmond Council in 2006 
+            and commands a spectacular view of the River Thames.
+          </p>
+        </div>
       </div>
-      <div class="poi river-thames">
-        <h2>River Thames</h2>
-        <p>
-          In all my travels I never clapt eyes<br>
-          on a more beauiful spot than this<br>
-          Here would I live and here would I die
-        </p>
+
+      <div class="poi-container">
+        <button type="button" class="collapsible river-thames">
+          <h4 class="poi-name">River Thames</h4>
+        </button>
+        <div class="content">
+          <p>
+            Upon the banks of the River Thames, London was built. 
+            Follow the path alongside the River to Twickenham, 
+            Kingston and Hampton Court Palace, passing impressive 
+            riverside houses, river islands and nature. Boat rides and 
+            hire are avilable from the river bank at Richmond. 
+          </p>
+        </div>
       </div>
-      <div class="poi old-father-thames">
-        <h2>Old Father Thames</h2>
-        <p>
-          In all my travels I never clapt eyes<br>
-          on a more beauiful spot than this<br>
-          Here would I live and here would I die
-        </p>
+
+      <div class="poi-container">
+        <button type="button" class="collapsible old-father-thames">
+          <h4 class="poi-name">Old Father Thames</h4>
+        </button>
+        <div class="content">
+          <p>
+            One of two River God's sculpted in the 18th Century by John Bacon RA (1740-99). 
+            The other is in the forecourt of Ham House. 
+            In 1992 the Richmond Society arranged for it to be restored 
+            and placed in it current location. At the opening ceremony the 
+            Mayor of Richmond placed historical records in the base of the 
+            statue.
+          </p>
+        </div>
       </div>
-      <div class="poi bulbous-betty">
-        <h2>Bulbous Betty</h2>
-        <p>
-          In all my travels I never clapt eyes<br>
-          on a more beauiful spot than this<br>
-          Here would I live and here would I die
-        </p>
+
+      <div class="poi-container">
+        <button type="button" class="collapsible bulbous-betty">
+          <h4 class="poi-name">Bulbous Betty</h4>
+        </button>
+        <div class="content">
+          <p>
+            As part of the war effort, the previous 
+            cast-iron fountain was removed during World War II,
+            along with the iron railings on the Upper Terrace.
+            The replacement of the cast-iron fountain with the six-foot Portland stone 
+            statue of Aphrodite by Allan Howe in 1952 caused a furore among
+            those who thought it in bad taste. Aphrodite was quickly re-christened 
+            Bulbous Betty, a nick-name that has remained.  
+          </p>
+        </div>
       </div>
-      <div class="poi terrace-gardens">
-        <h2>Terrace Gardens</h2>
-        <p>
-          In all my travels I never clapt eyes<br>
-          on a more beauiful spot than this<br>
-          Here would I live and here would I die
-        </p>
+
+      <div class="poi-container">
+        <button type="button" class="collapsible terrace-gardens">
+          <h4 class="poi-name">Terrace Gardens</h4>
+        </button>
+        <div class="content">
+          <p>
+            Terrace Gardens used to belong to the houses of nobility, now joined together 
+            consisting of lawns, flower beds, shelter, the River God statue and an ice cave. 
+          </p>
+        </div>
       </div>
+    </div>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
 
     </div>
   </section>
-
-  <section class="twickenham-outer">
-    <div class="background-twickenham-img">
-    </div>
-  </section>
-
 
   <section id="food-and-accommodation">
-    <div class="section-title">
-      <h1>Food and Accommodation</h1>
-    </div>
-    <div class="food-box"></div>
-    <div class="food">
-      <a href="#">
-        <h3>Garden Cafe</h3>
-      </a>
+    
 
+    <div id="cafe" class="background-hero-img">
     </div>
-    <div class="food">
-      <a href="#">
-        <h3>Richmond Hill Hotel 1</h3>
-      </a>
 
-    </div>
-    <div class="food">
-      <a href="#">
-        <h3>Richmond Hill Hotel 2</h3>
-      </a>
-    </div>
-    <div class="food">
-      <a href="#">
-        <h3>Richmond Hill Hotel 3</h3>
-      </a>
+    <div class="grid food-grid">
+      <div class="food-container">
+        <button type="button" class="collapsible terrace-view">
+          <h4 class="poi-name">Terrace View</h4>
+        </button>
+        <div class="content">
+          <p>The main view point from Richmond Hill across the River Thames. Sit and relax on the benches, stroll along
+            the promenade, shelter under the shade of grand oak trees.
+            A lively community mixes with nature and tranquility. </p>
+        </div>
+      </div>
 
+      <div class="food-container">
+        <button type="button" class="collapsible rspca-monument">
+          <h4 class="poi-name">RSPCA Monument</h4>
+        </button>
+        <div class="content">
+          <p>
+            What is now a monument to the Royal Society for the Prevention of Cruelty to Animals (RSPCA) 
+            used to be a water fountain for the purpose of prividng a drink for horses who had pulled their 
+            passengers and carriages up the hill.
+          </p>
+        </div>
+      </div>
+
+      <div class="food-container">
+        <button type="button" class="collapsible terrace-field">
+          <h4 class="poi-name">Terrace Field</h4>
+        </button>
+        <div class="content">
+          <p>
+            A popular spot for picnics in the long grass, or sledging on a snowy winter's day. 
+            Terrace field is accessed from both the top and bottom of the hill, connected by crossing pathways.
+          </p>
+        </div>
+      </div>
+
+      <div class="food-container">
+        <button type="button" class="collapsible summer-house">
+          <h4 class="poi-name">Summer House</h4>
+        </button>
+        <div class="content">
+          <p>
+            The Summerhouse has existed in this location since 1936, 
+            although it has been rebuilt several times. 
+            The current structure was restored by Richmond Council in 2006 
+            and commands a spectacular view of the River Thames.
+          </p>
+        </div>
+      </div>
+
+      
+
+      
+
+      
+
+      
     </div>
+
+
+  <div class="food-gap section-title">
+  </div class="food-title-gap section-title">
+  <div>
+
+  
+
+  <div class="food-box"></div>
+  <div class="food">
+    <a href="#">
+      <h3>Garden Cafe</h3>
+    </a>
+
+  </div>
+  <div class="food">
+    <a href="#">
+      <h3>Richmond Hill Hotel 1</h3>
+    </a>
+
+  </div>
+  <div class="food">
+    <a href="#">
+      <h3>Richmond Hill Hotel 2</h3>
+    </a>
+  </div>
+  <div class="food">
+    <a href="#">
+      <h3>Richmond Hill Hotel 3</h3>
+    </a>
+
+  </div>
   </section>
 
   <section id="travel">
@@ -207,6 +363,7 @@
       </div>
     </div>
   </section>
+
 
   <footer>
     <div><a href="#" target="_blank">about</a></div>

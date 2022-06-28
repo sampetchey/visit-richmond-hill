@@ -34,7 +34,7 @@ header div a:hover {
     text-shadow: 2px 2px 8px gray;
 }
 
-/*.......................................title logo......*/
+/* brand visitguide logo */
 
 .logo-img {
     margin: 0;
@@ -49,19 +49,7 @@ header div a:hover {
     box-shadow: 0px 0px 5px #aaaaaa;
 }
 
-/*.......................................main grid settings......
-
-main {
-    display: grid;
-    grid-template-rows: 95vh auto 10em;
-    grid-template-columns: 1fr 5fr 2fr 1fr;
-    grid-template-areas: 
-    "hero hero hero hero"
-    ". info sidebar ."
-    "footer footer footer footer";
-}
-
-/*.....................................Hero Image, Title, Nav and Subscribe....*/
+/* background hero image and scroll animation */
 
 @-webkit-keyframes backgroundScroll {
     from {
@@ -89,25 +77,39 @@ main {
 
 .background-hero-img {
     width: 100vw;
-    height: 95vh;
-    background: url("../images/view1.jpeg") no-repeat;
     -webkit-animation: backgroundScroll 120s linear infinite;
     animation: backgroundScroll 120s linear infinite;
-    position: absolute;
-    position: fixed;
     left: 0;
     top: 5vh;
-    z-index: -2;
-     
-    }
+}
 
-/*.......................................blank section.........*/
+#view1 {
+    height: 95vh;
+    background: url("../images/view1.jpeg") no-repeat;
+    position: absolute;
+    position: sticky;
+    z-index: -2;
+}
+
+#cafe {
+    height: 100vh;
+    background: url("../images/orangery-cafe1.jpg") no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    position: sticky;
+    bottom: 0;
+    z-index: -2
+}
+
+/* blank section as buffer before points of interest*/
 
 .blank {
     width: 100vw;
-    height: 60vh;
+    height: 100vh;
     margin: 0;
 }
+
+/* richmond hill main title */
 
 .title {
     width: 100vw;
@@ -131,13 +133,18 @@ main {
     text-shadow: 2px 2px 4px #726a6a;
     margin: 0;
     text-align: center;
+    
 }
 
 .title div a {
     text-decoration: none;
 }
 
+.title a:hover {
+    text-decoration: none;
+}
 
+/* navigation bar and items */
 
 nav {
     width: 100vw;
@@ -153,99 +160,140 @@ nav {
     
 }
 
+.fa-solid {
+    display: none;
+}
+
 nav h5 {
     margin: 0;
     font-size: 1.6vw;
     font-weight: 300;
-    text-transform:uppercase;
+    text-transform: uppercase;
     color: rgb(15, 126, 143, 0.8);
     padding: 5px 25px;
     text-align: center;
 }
 
+
 nav a:hover {
     text-decoration: none;
 }
-
-@media screen and (max-width: 768px) {
-nav { 
-    display: none;    
-}
-
-.connect {
-    display: none;
-}
-
-.title {
-    height: 21vh;
-    background-color: rgb(240, 248, 255, 0.5);
-}
-
-.title-text {
-    padding-top: 9vh;
-    font-size: 4em;
-    text-align: center;
-}
-
-}
     
-
-/*.......................................subscribe messages and button..........*/
-
-.subscribe {
-    width: 100vw;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* subscribe button to open form - fixed bottom right */
+.open-button {
+  background-color: #0f7e8f;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px #726a6a;
+  opacity: 0.7;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
 }
 
-.subscribe h2 {
-    color: #fff;
-    text-shadow: 2px 2px 4px #726a6a;
-    
-    margin: 0;
-    text-align: center;
+/* popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
 }
 
-.subscribe button {
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+/* styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
 }
 
+.form-container h4, label {
+    color: #0f7e8f;
+}
 
-/*.......................................section titles..............*/
+/* first and last name input fields */
+.form-container input[type=text], .form-container input[type=fname], .form-container input[type=lname] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=email]:focus, .form-container input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* style for the submit/login button */
+.form-container .btn {
+  background-color: rgb(15, 126, 143);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* green background color for the cancel button */
+.form-container .cancel {
+  background-color: #fff;
+  color: #0f7e8f;
+}
+
+/* hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* section titles, buffer zones*/
 
 .section-title {
-    
     width: 100%;
     height: 26vh;
-    
-    background: linear-gradient(0deg, rgba(224,251,255,0.8) 0%, rgba(224,251,255,0) 100%);
-    box-shadow: #e0fbff;
+}
+
+.food {
+    background: #0f7e8f;
+}
+
+.poi-gap {
+    background: linear-gradient(0deg, rgb(15, 126, 143, 0.8) 0%, rgb(15, 126, 143, 0) 100%);
+}
+
+.food-gap {
+    background: linear-gradient(0deg, rgb(224, 251, 255) 0%, rgba(224, 251, 255, 0) 100%);
+}
+
+.food-title-gap {
+    background: #e0fbff;
     
 }
 
-/*.......................................places of interest............*/
+/* places of interest section layout */
 
 .flex {
     display: flex;
     gap: var(--gap, 1rem);
   }
 
-.poi-grid {
+.grid {
     width: 100vw;
     height: auto;
-    background:rgb(224, 251, 255, 0.8);
     display: grid;
-    padding: 10%;
+    padding: 15% 10%;
     gap: 3rem;
+}
+
+.poi-grid {
+    background: linear-gradient(0deg, rgb(15, 126, 143) 0%, rgb(15, 126, 143, 0) 100%);
     grid-auto-columns: 2fr 1fr 1fr 2fr;
     grid-template-areas: 
         'terrace-view'
@@ -255,13 +303,15 @@ nav {
         'old-father-thames'
         'bulbous-betty'
         'summer-house'
-        'terrace-gardens';
-    
+        'terrace-gardens';   
     padding-block: 2rem;
     width: min (95%, 70rem);
     
 }
 
+.food-grid {
+    background: linear-gradient(0deg, rgb(33, 215, 216) 0%, rgb(15, 126, 143, 0) 100%);
+}
 
 .poi:nth-child(1) {
     grid-area: terrace-view;
@@ -320,22 +370,72 @@ nav {
         "old-father-thames bulbous-betty summer-house terrace-gardens";}
 }
 */
-.poi {
+
+/* places of interest item design */
+
+.poi-container {
     font-size: var(--fs-400);
-    height: 50vh;
+    height: auto;
     width: auto;
-    padding: 2rem;
-    border-radius: 0.5rem;
+    border: #fff;
+    border-style:solid;
+    border-width: 5px;
+    border-radius: 0.2rem;
     background-color: #0f7e8f;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 2px 2px 4px #726a6a;
+    background-size: cover;    
 }
 
+
+
+.food-container {
+    
+}
+
+.collapsible {
+    height: 50vh;
+    width: 100%;
+    margin: 0;
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.poi-name {
+    font-weight: 200;
+    text-shadow: 2px 2px 14px #726a6a;;
+    position: absolute;
+    left: 20px;
+    bottom: 3px;
+    padding: 5px 10px;
+    background-color: rgb(15, 126, 143, 0.5);
+    color: #fff;
+}
+  
+  .active, .poi-container:hover {
+    text-decoration: none;
+  }
+  
+  .content {
+    margin: 0;
+    padding: 10px 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #fff;
+    color: #0f7e8f;
+  }
+
+  button:focus {
+    border: none;
+    outline: none;
+ }
 /*.......................places of interest images.......*/
 
 .terrace-view {
@@ -370,39 +470,7 @@ nav {
     background-image: url("../images/terracegardens2.jpg");
 }
 
-/*.......................................background twickenham img.........*/
 
-.background-twickenham-img {
-    width: 100%;
-    height: 95vh;
-    background: url("../images/twickenham.jpg") no-repeat center;
-    background-size: cover;
-    animation-name: twickenham-zoom;
-    animation-duration: 90s;
-    animation-fill-mode: forwards;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 5vh;
-}
-
-.twickenham-outer {
-    width: 100%;
-    height: 95vh;
-    overflow: hidden;
-    position: -webkit-sticky;
-    position: sticky;
-    z-index: -1;
-    top: 5vh
-}
-
-@keyframes twickenham-zoom {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.5);
-    }
-}
 
 /*.......................................food and accommodation............*/
 
@@ -473,7 +541,68 @@ footer div a:hover {
     text-shadow: 2px 2px 8px gray;
 }
 
+/*.......................subscribe form......................*/
 
+
+
+/*.......................responsive small screen settings....*/
+
+@media screen and (max-width: 768px) {
+    .logo-img {
+        max-height: 10vh;
+        left: 0;
+    }
+
+    nav {
+        height: auto;
+        top: 20vh;
+        justify-content: space-around;
+        padding: 5px;
+        
+    }
+
+    nav h5 { 
+        display: none;    
+    }
+
+    
+
+    .fa-solid {
+        display: contents;
+        margin-right: 50px;
+        font-size: 4vw;
+        color: rgb(15, 126, 143, 0.8);
+        text-align: center;
+        
+    }
+/*
+    nav i {
+        margin: 0;
+        font-size: 5vw;
+        color: rgb(15, 126, 143, 0.8);
+        padding: 5px 25px;
+        text-align: center;
+        
+    }
+
+    */
+    
+    .connect {
+        display: none;
+    }
+    
+    .title {
+        height: 15vh;
+        background-color: rgb(240, 248, 255, 0.5);
+    }
+    
+    .title-text {
+        padding-top: 4vh;
+        font-size: 4em;
+        text-align: center;
+    }
+    
+    }
 
 /*.......................................poi light boxes and photos...
 
@@ -910,6 +1039,37 @@ h1 {
 #hero-image {
     height: 40vh;
     width: 60vw;
+}
+
+/*
+.subscribe h2 {
+    color: #fff;
+    text-shadow: 2px 2px 4px #726a6a;
+    
+    margin: 0;
+    text-align: center;
+}
+
+.subscribe button {
+    border: none;
+    color: #0f7e8f;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 4px #726a6a;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.subscribe-form {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+
 }
 
 */
