@@ -290,6 +290,7 @@ nav a:hover {
     display: grid;
     padding: 15% 10%;
     gap: 3rem;
+    justify-content: center;
 }
 
 .poi-grid {
@@ -387,10 +388,60 @@ nav a:hover {
     background-size: cover;    
 }
 
-
-
 .food-container {
-    
+    width: 80vw;
+    height: 250px;
+    border: #0f7e8f;
+    border-style:solid;
+    border-width: 5px;
+    border-radius: 0.2rem;
+    background-color: #fff;
+    display: flex;
+}
+
+.food-info {
+    width: 2fr;
+}
+
+.food-imgs {
+    width: 3fr;
+    height: 35vh;
+    column-count: 3;
+}
+
+.food-imgs img {
+    object-fit: contain;
+}
+
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    height: 20vh;
+    flex-grow: 1;
+    text-decoration: none;
+  }
+  
+li img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+.img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+
+.img-box img {
+    width: 250px;
+  max-height: 25vh;
+  object-fit: cover;
 }
 
 .collapsible {
@@ -472,7 +523,15 @@ nav a:hover {
 
 
 
-/*.......................................food and accommodation............*/
+/* food and drink */
+
+#hashLink {
+    display: none;
+  }
+  
+  #hashLink:target {
+    display: block;
+  }
 
 .food-box {
     width: 100vw;
