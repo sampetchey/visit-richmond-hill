@@ -110,7 +110,6 @@ header div a:hover {
 }
 
 /* richmond hill main title */
-
 .title {
     width: 100vw;
     height: 18vh;
@@ -125,7 +124,6 @@ header div a:hover {
     align-items: center;
     padding-top: 3vh;
 }
-
 .title-text {
     font-family: tangerine, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 7vw;
@@ -135,17 +133,13 @@ header div a:hover {
     text-align: center;
     
 }
-
 .title div a {
     text-decoration: none;
 }
-
 .title a:hover {
     text-decoration: none;
 }
-
 /* navigation bar and items */
-
 nav {
     width: 100vw;
     max-height: 7vh;
@@ -159,11 +153,9 @@ nav {
     align-items: center;
     
 }
-
 .fa-solid {
     display: none;
 }
-
 nav h5 {
     margin: 0;
     font-size: 1.6vw;
@@ -176,9 +168,9 @@ nav h5 {
 
 nav a:hover {
     text-decoration: none;
-    
+
 }
-    
+
 /* subscribe button to open form - fixed bottom right */
 .open-button {
   background-color: #0f7e8f;
@@ -206,18 +198,15 @@ nav a:hover {
   border: 3px solid #f1f1f1;
   z-index: 9;
 }
-
 /* styles to the form container */
 .form-container {
   max-width: 300px;
   padding: 10px;
   background-color: white;
 }
-
 .form-container h4, label {
     color: #0f7e8f;
 }
-
 /* first and last name input fields */
 .form-container input[type=text], .form-container input[type=fname], .form-container input[type=lname] {
   width: 100%;
@@ -226,13 +215,11 @@ nav a:hover {
   border: none;
   background: #f1f1f1;
 }
-
 /* When the inputs get focus, do something */
 .form-container input[type=email]:focus, .form-container input[type=email]:focus {
   background-color: #ddd;
   outline: none;
 }
-
 /* style for the submit/login button */
 .form-container .btn {
   background-color: rgb(15, 126, 143);
@@ -244,13 +231,11 @@ nav a:hover {
   margin-bottom:10px;
   opacity: 0.8;
 }
-
 /* green background color for the cancel button */
 .form-container .cancel {
   background-color: #fff;
   color: #0f7e8f;
 }
-
 /* hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
@@ -262,19 +247,15 @@ nav a:hover {
     width: 100%;
     height: 26vh;
 }
-
 .food {
     background: #0f7e8f;
 }
-
 .poi-gap {
     background: linear-gradient(0deg, rgb(15, 126, 143, 0.8) 0%, rgb(15, 126, 143, 0) 100%);
 }
-
 .food-gap {
     background: linear-gradient(0deg, rgb(224, 251, 255) 0%, rgba(224, 251, 255, 0) 100%);
 }
-
 .food-title-gap {
     background: #e0fbff;
     
@@ -310,7 +291,7 @@ nav a:hover {
 }
 
 .food-grid {
-    
+
     padding: 15% 5% 8%;
     grid-auto-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
@@ -324,7 +305,6 @@ nav a:hover {
 .poi:nth-child(1) {
     grid-area: terrace-view;
 }
-
 .poi:nth-child(2) {
     grid-area: rspca-monument;
 }
@@ -336,23 +316,18 @@ nav a:hover {
 .poi:nth-child(4) {
     grid-area: terrace-gate;
 }
-
 .poi:nth-child(5) {
     grid-area: old-father-thames;
 }
-
 .poi:nth-child(6) {
     grid-area: bulbous-betty;
 }
-
 .poi:nth-child(7) {
     grid-area: summer-house;
 }
-
 .poi:nth-child(8) {
     grid-area: terrace-gardens;
 }
-
 @media screen and (min-width: 768px) {
     .poi-grid { 
         grid-template-areas: 
@@ -383,7 +358,6 @@ nav a:hover {
         "terrace-gate old-father-thames" 
         "bulbous-betty summer-house terrace-gardens";}
 }
-
 @media screen and (min-width: 1200px) {
     .poi-grid { 
         grid-template-areas: 
@@ -391,9 +365,7 @@ nav a:hover {
         "old-father-thames bulbous-betty summer-house terrace-gardens";}
 }
 */
-
 /* places of interest item design */
-
 .poi-container {
     font-size: var(--fs-400);
     height: auto;
@@ -423,7 +395,6 @@ nav a:hover {
     background-size: cover;
     background-position: center;
 }
-
 .poi-name {
     font-weight: 200;
     text-shadow: 2px 2px 14px #726a6a;;
@@ -447,41 +418,32 @@ nav a:hover {
     background-color: #fff;
     color: #0f7e8f;
   }
-
   button:focus {
     border: none;
     outline: none;
  }
 /*.......................places of interest images.......*/
-
 .terrace-view {
     background-image: url("../images/view4.jpg");
 }
-
 .rspca-monument {
     background-image: url("../images/rspca-monument.jpg");
 }
-
 .terrace-field {
     background-image: url("../images/terrace-field.jpg");
 }
-
 .summer-house {
     background-image: url("../images/summerhouse1.jpg");
 }
-
 .river-thames {
     background-image: url("../images/thames3.jpg");
 }
-
 .old-father-thames {
     background-image: url("../images/oldfatherthames2.jpg");
 }
-
 .bulbous-betty {
     background-image: url("../images/bulbousbetty2.jpg");
 }
-
 .terrace-gardens {
     background-image: url("../images/terracegardens2.jpg");
 }
@@ -539,7 +501,6 @@ nav a:hover {
     align-items: center;
     justify-content: center;
 }
-
 .travel {
     width: 66%;
     height: 30vh;
@@ -548,9 +509,7 @@ nav a:hover {
     box-shadow: 0px 0px 5px #aaaaaa;
     margin-bottom: 5vh;
 }
-
 /*.........................................footer..........................*/
-
 footer {
     position: absolute;
     width: 100%;
@@ -564,31 +523,23 @@ footer {
     z-index: 100;
     left: 0;
 }
-
 footer div a {
     text-transform: none;
     text-decoration: none;
     color: #fff;
     text-shadow: 1px 1px 4px gray;
 }
-
 footer div a:hover {
     text-size-adjust: 4em;
     text-shadow: 2px 2px 8px gray;
 }
-
 /*.......................subscribe form......................*/
-
-
-
 /*.......................responsive small screen settings....*/
-
 @media screen and (max-width: 768px) {
     .logo-img {
         max-height: 10vh;
         left: 0;
     }
-
     nav {
         height: auto;
         top: 20vh;
@@ -596,13 +547,10 @@ footer div a:hover {
         padding: 5px;
         
     }
-
     nav h5 { 
         display: none;    
     }
-
     
-
     .fa-solid {
         display: contents;
         margin-right: 50px;
@@ -620,7 +568,6 @@ footer div a:hover {
         text-align: center;
         
     }
-
     */
     
     .connect {
@@ -639,9 +586,7 @@ footer div a:hover {
     }
     
     }
-
 /*.......................................poi light boxes and photos...
-
 .row > .column {
     padding: 0 8px;
   }
@@ -767,12 +712,7 @@ footer div a:hover {
   .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-
   
-
-
-
-
 .portfolio {
     margin-top: 28vh;
     display: grid;
@@ -851,8 +791,6 @@ footer div a:hover {
     }
   }
   
-
-
 .info {
     background: pink;
     display: flex;
@@ -861,7 +799,6 @@ footer div a:hover {
     
     
 }
-
 .info-card {
     background: lightblue;
     height: auto;
@@ -871,49 +808,33 @@ footer div a:hover {
     flex-direction: column;
     padding: 0.5em 3em;
 }
-
 .card-title {
     background: antiquewhite;
     color: darkblue;
     margin: 0;
 }
-
 .card-img {
     grid-area: img;
     background: pink;
-
 }
-
 .card-title {
     grid-area: title;
     background: lightblue;
 }
-
 .card-content {
     grid-area: content;
     background: lightgreen;
 }
-
 aside {
     grid-area: sidebar;
     background: darkgrey;
     padding: 1.5em;
 }
-
 */
-
 /*..............................header - brand & socials..*/
-
-
-
-
-
-
     
 }
-
 /*................................Welcome Section.........
-
 .welcome {
     background-color: aliceblue;
     min-height: 100vh;
@@ -922,19 +843,11 @@ aside {
     display: flex;
     flex-direction: column;
 }
-
 .welcome div {
     background-color: lightblue;
 }
-
 /
-
-
-
-
-
 /*.............................home section...........
-
 #home {
     margin-top: 5vh;
     display: grid;
@@ -942,16 +855,8 @@ aside {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: ". title ." "see stay go" ". subscribe .";
 }
-
-
-
-
 /*.............................pano-view hero image...
-
-
-
 /*.............................header logo..........
-
 .logo-nav-subs_container {
     height: 95vh;
     width: 100vw;
@@ -961,14 +866,11 @@ aside {
     align-items: center;
     justify-content: center;
 }
-
 .logo {
     max-height: 25%;
     max-width: 50%;
     object-fit: scale-down;
 }
-
-
 .home-menu {
     height: 50%;
     width: 100%;
@@ -977,7 +879,6 @@ aside {
     align-items: center;
     justify-content: space-around;
 }
-
 div .menu {
     max-width: 284px;
     padding: 10px 10px 20px 10px;
@@ -985,12 +886,7 @@ div .menu {
     background-color: white;
     box-shadow: 10px 10px 5px #aaaaaa;
   }
-
-
-
-
 /*..............................Richmond Hill Heading and nav..
-
 h1 {
     text-align: left;
     font-family: tangerine, cursive, sans-serif;
@@ -999,34 +895,25 @@ h1 {
     color: white;
     padding: 10px;
 }
-
 #logo {
     float:left;
 }
-
 #logo, #menu {
     line-height: 75px;
 }
-
 #menu {
     font-size: 110%;
     list-style: none;
     color: white;
 }
-
 #menu li {
     float: ;
     margin-right: 40px;
 }
-
-
-
 .active {
     text-shadow: 2px 2px 8px rgb(85, 128, 94);
 }
-
 /*..............................Navigation tiles - Sights, Tastes, & Stays ..
-
 .row {
     display: flex;
   }
@@ -1035,13 +922,11 @@ h1 {
     flex: 33.33%;
     padding: 5px;
   }
-
 #sights-tastes-stay {
     margin: 0;
     display: flex;
     
 }
-
 .square-lg {
     list-style-type: none;
     border: 5vw;
@@ -1053,30 +938,24 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
 }   
-
 #sights {
     background: url("../images/sights.png");
     background-position: center;
     
 }
-
 #tastes {
     background: url("../images/tastes.png");
     background-position: center;
 }
-
 #ßstay {
     background: url("../images/stay.png");
     background-position: center;
 }
-
 /*..............................Hero image and animation..
-
 #hero-image {
     height: 40vh;
     width: 60vw;
 }
-
 /*
 .subscribe h2 {
     color: #fff;
@@ -1085,7 +964,6 @@ h1 {
     margin: 0;
     text-align: center;
 }
-
 .subscribe button {
     border: none;
     color: #0f7e8f;
@@ -1098,17 +976,11 @@ h1 {
     margin: 4px 2px;
     cursor: pointer;
 }
-
 .subscribe-form {
     display: none;
     position: fixed;
     height: 100vh;
     width: 100vw;
     z-index: 100;
-
 }
-
 */
-
-
-
