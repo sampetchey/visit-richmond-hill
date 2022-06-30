@@ -105,7 +105,7 @@ header div a:hover {
 
 .blank {
     width: 100vw;
-    height: 100vh;
+    height: 74vh;
     margin: 0;
 }
 
@@ -174,9 +174,9 @@ nav h5 {
     text-align: center;
 }
 
-
 nav a:hover {
     text-decoration: none;
+    
 }
     
 /* subscribe button to open form - fixed bottom right */
@@ -188,11 +188,14 @@ nav a:hover {
   cursor: pointer;
   box-shadow: 2px 2px 4px #726a6a;
   opacity: 0.7;
+  position: absolute;
   position: fixed;
   bottom: 23px;
   right: 28px;
   width: 280px;
+  z-index: 1;
 }
+
 
 /* popup form - hidden by default */
 .form-popup {
@@ -253,7 +256,7 @@ nav a:hover {
   opacity: 1;
 }
 
-/* section titles, buffer zones*/
+/* section titles - buffer zones to allow space for main title and nav */
 
 .section-title {
     width: 100%;
@@ -279,22 +282,18 @@ nav a:hover {
 
 /* places of interest section layout */
 
-.flex {
-    display: flex;
-    gap: var(--gap, 1rem);
-  }
 
 .grid {
     width: 100vw;
     height: auto;
     display: grid;
-    padding: 15% 10%;
     gap: 3rem;
     justify-content: center;
+    background: linear-gradient(0deg, rgb(15, 126, 143) 0%, rgb(15, 126, 143, 0) 100%);
 }
 
 .poi-grid {
-    background: linear-gradient(0deg, rgb(15, 126, 143) 0%, rgb(15, 126, 143, 0) 100%);
+    padding: 15% 10%;
     grid-auto-columns: 2fr 1fr 1fr 2fr;
     grid-template-areas: 
         'terrace-view'
@@ -311,7 +310,15 @@ nav a:hover {
 }
 
 .food-grid {
-    background: linear-gradient(0deg, rgb(33, 215, 216) 0%, rgb(15, 126, 143, 0) 100%);
+    
+    padding: 15% 5% 8%;
+    grid-auto-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        'terrace-view'
+        'rspca-monument'
+        'terrace-field' 
+    padding-block: 2rem;
+    width: min (95%, 70rem);
 }
 
 .poi:nth-child(1) {
@@ -323,8 +330,7 @@ nav a:hover {
 }
 
 .poi:nth-child(3) {
-    grid-area: terrace-field;
-    
+    grid-area: terrace-field;    
 }
 
 .poi:nth-child(4) {
@@ -353,8 +359,22 @@ nav a:hover {
         "terrace-view rspca-monument"
         "terrace-field terrace-gate"
         "old-father-thames bulbous-betty"
-        "summer-house terrace-gardens";}
+        "summer-house terrace-gardens";
+    }
+    .food-grid {
+        grid-template-areas: 
+        "terrace-view rspca-monument terrace-field"; 
+    }
 }
+
+/*
+@media screen and (min-width: 992px) {
+    .food-grid { 
+        grid-template-areas: 
+        "terrace-view rspca-monument terrace-field terrace-gate";
+    }
+} */
+
 /*
 @media screen and (min-width: 992px) {
     .poi-grid { 
@@ -388,61 +408,6 @@ nav a:hover {
     background-size: cover;    
 }
 
-.food-container {
-    width: 80vw;
-    height: 250px;
-    border: #0f7e8f;
-    border-style:solid;
-    border-width: 5px;
-    border-radius: 0.2rem;
-    background-color: #fff;
-    display: flex;
-}
-
-.food-info {
-    width: 2fr;
-}
-
-.food-imgs {
-    width: 3fr;
-    height: 35vh;
-    column-count: 3;
-}
-
-.food-imgs img {
-    object-fit: contain;
-}
-
-
-ul {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-li {
-    height: 20vh;
-    flex-grow: 1;
-    text-decoration: none;
-  }
-  
-li img {
-    max-height: 100%;
-    min-width: 100%;
-    object-fit: cover;
-    vertical-align: bottom;
-}
-.img-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2px;
-}
-
-.img-box img {
-    width: 250px;
-  max-height: 25vh;
-  object-fit: cover;
-}
 
 .collapsible {
     height: 50vh;
@@ -521,35 +486,47 @@ li img {
     background-image: url("../images/terracegardens2.jpg");
 }
 
+/* food and drink tile images */
+
+.orangery {
+    background-image: url("../images/orangery1.jpg");
+}
+
+.hollyhock {    
+    background-image: url("../images/hollyhock1.jpg");
+}
+
+.roebuck {
+    background-image: url("../images/roebuck1.jpg");
+}
 
 
 /* food and drink */
 
-#hashLink {
-    display: none;
-  }
-  
-  #hashLink:target {
-    display: block;
-  }
+.modal-content {
+    padding: 1fr;
+    min-width: 50vw;
+    border: #0f7e8f;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 0.2rem;
+    color: #0f7e8f;
+    text-shadow: 0px 0px 0.5px #726a6a;
+    margin: auto;
+}
 
-.food-box {
-    width: 100vw;
-    height: auto;
-    background-color: rgba(228, 212, 212, 0.4);
+.modal-body {
     display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center; 
-    gap: 3%;
-
+    overflow: auto;
+    white-space: nowrap;
+    gap: 2em;
 }
 
-.food {
-    max-width: 40%;
-    height: 250px;
-    background-color: rgba(228, 212, 212, 0.4);
+.modal-img {
+    height: 25vh;
+    object-fit: contain;
 }
+
 
 /*.......................................travel...........................*/
 

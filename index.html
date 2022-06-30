@@ -8,7 +8,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/0f338e127d.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
     type="text/css" />
@@ -87,7 +89,7 @@
         <input id="lname" type="text" name="last_name" required>
 
         <label for="email">Email Address</label>
-        <input id="email" type="email" name="email_address" required>
+        <input id="email" type="text" name="email_address" required>
 
         <button type="subscribe" class="btn" value="subscribe">Subscribe</button>
         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
@@ -237,93 +239,119 @@
         });
       }
     </script>
-
-    </div>
   </section>
 
-  <section id="food-and-drink">
+  <section>
 
     <div id="cafe" class="background-hero-img">
     </div>
 
-<div>
-  <p>This is some expandable content.</p>
-  <p id="hashLink">
-    I have expanded like a Pufferfish.
-    <a href="#">Please collapse this poor fish.</a>
-  </p>
-</div>
+ 
 
-<a href="#hashLink">Expand</a>
-
-    <div class="grid food-grid">
-      <div class="food-container">
-        <div class="food-in">
-          <h4 class="food-name">The Orangery</h4>
-          <p>
-            The main view point from Richmond Hill across the River Thames. Sit and relax on the benches, stroll along
-            the promenade, shelter under the shade of grand oak trees.
-            A lively community mixes with nature and tranquility.
-          </p>
-        </div>
-        <img class="food-img" src="assets/images/orangery1.jpg">
-        <img class="food-img" src="assets/images/orangery2.jpg">
-        <img class="food-img" src="assets/images/orangery3.jpg">
-        
-      </div>
-
-      <div class="food-container">
-        <button type="button" class="collapsible rspca-monument">
-          <h4 class="poi-name">RSPCA Monument</h4>
+    <div id="food-and-drink" class="grid food-grid">
+      <div class="poi-container">
+        <button type="button" class="collapsible terrace-view orangery" data-toggle="modal" data-target="#orangery">
+          <h4 class="poi-name">The Orangery</h4>
         </button>
-        <div class="content">
-          <p>
-            What is now a monument to the Royal Society for the Prevention of Cruelty to Animals (RSPCA)
-            used to be a water fountain for the purpose of prividng a drink for horses who had pulled their
-            passengers and carriages up the hill.
-          </p>
+        <div id="orangery" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">The Orangery</h4>
+                <p> A delightful cafe, housed in the grounds of Ham House at the bottom of Richmond Hill<br><br>
+                  <a href="#">SEE MENU</a>
+                </p>
+              </div>
+              <div class="modal-body">
+                <img src="assets/images/orangery1.jpg" alt="cafe tables and garden outside the orangery cafe"
+                  class="modal-img">
+                <img src="assets/images/orangery2.jpg" alt="cafe tables and garden outside the orangery cafe"
+                  class="modal-img">
+                <img src="assets/images/orangery3.jpg" alt="cafe tables and garden outside the orangery cafe"
+                  class="modal-img">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
 
-      <div class="food-container">
-        <button type="button" class="collapsible terrace-field">
-          <h4 class="poi-name">Terrace Field</h4>
+      <div class="poi-container">
+        <button type="button" class="collapsible rspca-monument hollyhock" data-toggle="modal" data-target="#hollyhock">
+          <h4 class="poi-name">Hollyhock Cafe</h4>
         </button>
-        <div class="content">
-          <p>
-            A popular spot for picnics in the long grass, or sledging on a snowy winter's day.
-            Terrace field is accessed from both the top and bottom of the hill, connected by crossing pathways.
-          </p>
+        <div id="hollyhock" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Hollyhock Cafe</h4>
+                <p> Nestled in the grounds of Terrace Garden, the ideal peaceful, garden setting for a spot of
+                  tea<br><br>
+                  <a href="#">SEE MENU</a>
+                </p>
+              </div>
+              <div class="modal-body">
+                <img src="assets/images/hollyhock1.jpg" alt="cafe tables and garden outside the orangery cafe"
+                  class="modal-img">
+                <img src="assets/images/hollyhock2.jpg" alt="cafe tables and garden outside the orangery cafe"
+                  class="modal-img">
+                <img src="assets/images/hollyhock3.jpg" alt="cafe tables and garden outside the orangery cafe"
+                  class="modal-img">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
 
-      <div class="food-container">
-        <button type="button" class="collapsible summer-house">
-          <h4 class="poi-name">Summer House</h4>
+      <div class="poi-container">
+        <button type="button" class="collapsible rspca-monument roebuck" data-toggle="modal" data-target="#roebuck">
+          <h4 class="poi-name">The Roebuck</h4>
         </button>
-        <div class="content">
-          <p>
-            The Summerhouse has existed in this location since 1936,
-            although it has been rebuilt several times.
-            The current structure was restored by Richmond Council in 2006
-            and commands a spectacular view of the River Thames.
-          </p>
+        <div id="roebuck" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">The Roebuck Pub</h4>
+                <p>A traditional English pub on the top of Richmond Hill selling fine wines, ale and pub food<br><br>
+                  <a href="#">SEE MENU</a>
+                </p>
+              </div>
+              <div class="modal-body">
+                <img src="assets/images/roebuck1.jpg" alt="cafe tables and garden outside the orangery cafe"
+                  class="modal-img">
+                <img src="assets/images/roebuck2.jpg" alt="cafe tables and garden outside the orangery cafe"
+                  class="modal-img">
+                <img src="assets/images/roebuck3.jpg" alt="cafe tables and garden outside the orangery cafe"
+                  class="modal-img">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
-
-
-
-
-
-
-
-
     </div>
 
 
-    <div class="food-gap section-title">
-    </div class="food-title-gap section-title">
-    <div>
+    
 
 
 
