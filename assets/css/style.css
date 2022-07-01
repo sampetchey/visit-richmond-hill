@@ -182,7 +182,6 @@ nav a:hover {
 
 nav a:hover h5{
     font-weight: 400;
-    text-shadow: 2px 2px 3px #fff;
 }
 
 /* subscribe button to open form - fixed bottom right */
@@ -196,7 +195,7 @@ nav a:hover h5{
   opacity: 0.7;
   position: absolute;
   position: fixed;
-  bottom: 23px;
+  bottom: 5vh;
   right: 28px;
   width: 280px;
   z-index: 1;
@@ -207,7 +206,7 @@ nav a:hover h5{
 .form-popup {
   display: none;
   position: fixed;
-  bottom: 0;
+  bottom: 5vh;
   right: 15px;
   border: 3px solid #f1f1f1;
   z-index: 9;
@@ -417,7 +416,7 @@ nav a:hover h5{
     left: 20px;
     bottom: 3px;
     padding: 5px 10px;
-    background-color: rgb(15, 126, 143, 0.5);
+    background-color: rgb(15, 126, 143, 0.7);
     color: #fff;
 }
   
@@ -530,7 +529,7 @@ nav a:hover h5{
 
 /*.......................................travel...........................*/
 
-
+/*
 
 .travel-box {
     min-width: 90vw;
@@ -542,7 +541,7 @@ nav a:hover h5{
     border-radius: 0.2rem;
     background-color: rgb(255, 255, 255, 0.8);
     display: flex;
-    padding: 5%; 
+    padding: 5%; */
 }
 .travel-info {
     width: 3fr;
@@ -563,11 +562,124 @@ nav a:hover h5{
     gap: 5px;
 }
 
-.travel-imgs img {
-    height: 120px;
-    width: auto;
-    object-fit: contain;
+.container {
+    padding-top: 5vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    width: 100vw;
+    height: 100vh;
+    gap: 15px;
+  }
+
+  .travel-info {
+    color: #0f7e8f;
+    border: #fff;
+    border-style:solid;
+    border-width: 5px;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255, 0.8);
+    display: flex;
+    padding: 5%; 
+  }
+
+  .travel-info div {
+    padding-right: 15px;
+  }
+
+  .travel-info img {
+    max-width: 50%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 4px #0f7e8f;
 }
+  
+  @media screen and (max-width: 60em) {
+    .container {
+      -ms-grid-rows: (1fr)[4];
+          grid-template-rows: repeat(4, 1fr);
+    }
+  }
+  
+    .grid-1 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    -ms-grid-row: 1;
+        grid-row: 1;
+  }
+  
+  @media screen and (max-width: 60em) {
+    .grid-1 {
+      -ms-grid-column: 1;
+          grid-column-start: 1;
+      grid-column-end: 5;
+      -ms-grid-row: 1;
+          grid-row: 1;
+    }
+  }
+  
+    .grid-2 {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 5;
+    -ms-grid-row: 1;
+        grid-row: 1;
+  }
+  
+  @media screen and (max-width: 60em) {
+    .grid-2 {
+      -ms-grid-column: 1;
+          grid-column-start: 1;
+      grid-column-end: 5;
+      -ms-grid-row: 2;
+          grid-row: 2;
+    }
+  }
+  
+    .grid-3 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    -ms-grid-row: 2;
+        grid-row: 2;
+  }
+  
+  @media screen and (max-width: 60em) {
+    .grid-3 {
+      -ms-grid-column: 1;
+          grid-column-start: 1;
+      grid-column-end: 5;
+      -ms-grid-row: 3;
+          grid-row: 3;
+    }
+  }
+  
+  .grid-4 {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 5;
+    -ms-grid-row: 2;
+        grid-row: 2;
+  }
+  
+  @media screen and (max-width: 60em) {
+    .grid-4 {
+      -ms-grid-column: 1;
+          grid-column-start: 1;
+      grid-column-end: 5;
+      -ms-grid-row: 4;
+          grid-row: 4;
+    }
+  }
+  
+  .callout {
+    margin: 0;
+  }
+  
 
 /*.........................................footer..........................*/
 footer {
@@ -585,7 +697,6 @@ footer {
     left: 0;
 }
 footer div a {
-    text-transform: none;
     text-transform: capitalize;
     text-decoration: none;
     color: #fff;
@@ -594,12 +705,12 @@ footer div a {
 footer div a:hover {
     color: #fff;
     text-decoration: none;
-    text-transform: none;
     text-size-adjust: 4em;
     text-shadow: 2px 2px 8px gray;
 }
-/*.......................subscribe form......................*/
-/*.......................responsive small screen settings....*/
+
+/* responsive small screen settings */
+
 @media screen and (max-width: 768px) {
     .logo-img {
         max-height: 10vh;
@@ -610,8 +721,8 @@ footer div a:hover {
         top: 20vh;
         justify-content: space-around;
         padding: 5px;
-        
     }
+
     nav h5 { 
         display: none;    
     }
@@ -622,7 +733,6 @@ footer div a:hover {
         font-size: 4vw;
         color: rgb(15, 126, 143, 0.8);
         text-align: center;
-        
     }
 /*
     nav i {
@@ -649,6 +759,21 @@ footer div a:hover {
         font-size: 4em;
         text-align: center;
     }
+
+    .open-button {
+        right: 50px; 
+    }
+
+    .travel-info {
+        flex-direction: column;
+    }
+      
+      
+      /* popup form - hidden by default */
+    .form-popup {
+        right: 100px;    
+
+      }
     
     }
 /*.......................................poi light boxes and photos...
