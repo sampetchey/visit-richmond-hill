@@ -20,7 +20,6 @@
 
 <body>
   <header>
-
     <div class="connect">CONNECT WITH US |</div>
     <div>
       <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
@@ -31,21 +30,17 @@
     <div>
       <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
     </div>
-
   </header>
-
   <div>
     <a href="#richmond-hill"><img src="assets/images/visitguide_logo.png" alt="Visit Guide Richmond Hill logo"
         class="logo-img"></a>
   </div>
-
   <section>
     <div class="title">
       <a href="#richmond-hill">
         <h1 class="title-text">Richmond Hill</h1>
       </a>
     </div>
-
     <nav>
       <a href="#places-of-interest">
         <h5>Places of Interest</h5>
@@ -61,30 +56,21 @@
       </a>
     </nav>
   </section>
-
-
   <div id="view1" class="background-hero-img">
   </div>
-
-
   <section id="richmond-hill">
     <div class="blank">
-
     </div>
     <div class="subscribe">
       <div>
         <button class="open-button" onclick="openForm()">Subscribe to our newsletter</button>
       </div>
     </div>
-
-
     <div class="form-popup" id="subscribe-form">
       <form action="/action_page.php" class="form-container">
         <h4>Subscribe to VisitGuide</h4>
-
         <label for="fname">First Name</label>
         <input id="fname" type="text" name="last_name" required>
-
         <label for="lname">Last Name</label>
         <input id="lname" type="text" name="last_name" required>
 
@@ -103,14 +89,10 @@
           document.getElementById("subscribe-form").style.display = "none";
         }
       </script>
-
   </section>
-
   <section id="places-of-interest">
-
     <div class="section-title">
     </div>
-
     <div class="grid poi-grid">
       <div class="poi-container">
         <button type="button" class="collapsible terrace-view">
@@ -122,7 +104,6 @@
             A lively community mixes with nature and tranquility. </p>
         </div>
       </div>
-
       <div class="poi-container">
         <button type="button" class="collapsible rspca-monument">
           <h4 class="poi-name">RSPCA Monument</h4>
@@ -135,7 +116,6 @@
           </p>
         </div>
       </div>
-
       <div class="poi-container">
         <button type="button" class="collapsible terrace-field">
           <h4 class="poi-name">Terrace Field</h4>
@@ -147,7 +127,6 @@
           </p>
         </div>
       </div>
-
       <div class="poi-container">
         <button type="button" class="collapsible summer-house">
           <h4 class="poi-name">Summer House</h4>
@@ -161,7 +140,6 @@
           </p>
         </div>
       </div>
-
       <div class="poi-container">
         <button type="button" class="collapsible river-thames">
           <h4 class="poi-name">River Thames</h4>
@@ -176,7 +154,6 @@
           </p>
         </div>
       </div>
-
       <div class="poi-container">
         <button type="button" class="collapsible old-father-thames">
           <h4 class="poi-name">Old Father Thames</h4>
@@ -192,7 +169,6 @@
           </p>
         </div>
       </div>
-
       <div class="poi-container">
         <button type="button" class="collapsible bulbous-betty">
           <h4 class="poi-name">Bulbous Betty</h4>
@@ -209,7 +185,6 @@
           </p>
         </div>
       </div>
-
       <div class="poi-container">
         <button type="button" class="collapsible terrace-gardens">
           <h4 class="poi-name">Terrace Gardens</h4>
@@ -222,11 +197,9 @@
         </div>
       </div>
     </div>
-
     <script>
       var coll = document.getElementsByClassName("collapsible");
       var i;
-
       for (i = 0; i < coll.length; i++) {
         coll[i].addEventListener("click", function () {
           this.classList.toggle("active");
@@ -239,6 +212,8 @@
         });
       }
     </script>
+
+
   </section>
 
   <section>
@@ -246,9 +221,8 @@
     <div id="cafe" class="background-hero-img">
     </div>
 
- 
-
     <div id="food-and-drink" class="grid food-grid">
+      
       <div class="poi-container">
         <button type="button" class="collapsible terrace-view orangery" data-toggle="modal" data-target="#orangery">
           <h4 class="poi-name">The Orangery</h4>
@@ -350,58 +324,47 @@
       </div>
     </div>
 
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
 
-    
-
-
-
-      <div class="food-box"></div>
-      <div class="food">
-        <a href="#">
-          <h3>Garden Cafe</h3>
-        </a>
-
-      </div>
-      <div class="food">
-        <a href="#">
-          <h3>Richmond Hill Hotel 1</h3>
-        </a>
-
-      </div>
-      <div class="food">
-        <a href="#">
-          <h3>Richmond Hill Hotel 2</h3>
-        </a>
-      </div>
-      <div class="food">
-        <a href="#">
-          <h3>Richmond Hill Hotel 3</h3>
-        </a>
-
-      </div>
   </section>
+
+  <div id="garden" class="background-hero-img">
+  </div>
 
   <section id="travel">
     <div class="section-title">
-      <h1>Travel</h1>
     </div>
+    
     <div class="travel-box">
-      <div class="travel scooter">
-        <a href="#">
-          <h3>Scooter</h3>
-        </a>
+      <div class="travel-info">
+        <h2>Scooter</h2>
+        <p>Hire a scooter to wizz around the area. Hills, no problem</p>
+        <h2>River Boat</h2>
+        <p>Get to Richmond Hill by boat leaving from Hampton Court Palace and Kingston</p>
+        <h2>Bus and Train</h2>
+        <p>Regular buses stop at the bottom of the Hill on Ham Road.
+          <br>
+          Richmond Station has overground trains from London Waterloo, Reading and Windsor. RIchmond Station is also on
+          the Underground District Line.</p>
+        <h2>Car</h2>
+        <p>The easiest place to park is at Pools on the Park , on the A316. This is the main road from Richmond into
+          London or out toward the M3 and M25</p>
       </div>
-      <div class="travel bus-train">
-        <a href="#">
-          <h3>Bus and Train</h3>
-        </a>
-      </div>
-      <div class="travel car">
-        <a href="#">
-          <h3>Car</h3>
-        </a>
+      <div class="travel-imgs">
+        <img src="assets/images/busstop.jpg" alt="bus stop on ham road">
+        <img src="assets/images/scooterhire1.jpg" alt="scooter hire rack near the RSPCA monument">
+        <img src="assets/images/thames2.jpg" alt="bus stop on ham road">
+        <img src="assets/images/scooterhire2.jpg" alt="scooters ready for hire">
       </div>
     </div>
+
+    <div class="section-title">
+    </div>
+    <div class="blank">
+    </div>
+
   </section>
 
 
