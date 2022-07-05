@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="
-    position: relative;
-    min-height: 100%;">
+<html lang="en"> 
 
 <head>
   <meta charset="UTF-8">
@@ -58,6 +56,7 @@
   </section>
   <div id="view1" class="background-hero-img">
   </div>
+
   <section id="richmond-hill">
     <div class="blank">
     </div>
@@ -66,18 +65,19 @@
         <button class="open-button" onclick="openForm()">SUBSCRIBE TO OUR NEWSLETTER</button>
       </div>
     </div>
+
     <div class="form-popup" id="subscribe-form">
-      <form action="/action_page.php" class="form-container">
+      <form action="https://formdump.codeinstitute.net" class="form-container" method="POST">
         <h4>Subscribe to VisitGuide</h4>
         <label for="fname">First Name</label>
-        <input id="fname" type="text" name="last_name" required>
+        <input id="fname" type="text" name="first_name" required>
         <label for="lname">Last Name</label>
         <input id="lname" type="text" name="last_name" required>
 
         <label for="email">Email Address</label>
         <input id="email" type="text" name="email_address" required>
 
-        <button type="subscribe" class="btn" value="subscribe">SUBSCRIBE</button>
+        <button type="submit" class="btn" value="subscribe">SUBSCRIBE</button>
         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
       </form>
       <script>
@@ -96,7 +96,7 @@
     <div class="grid poi-grid">
       <div class="poi-container">
         <button type="button" class="collapsible terrace-view">
-          <h4 class="poi-name">Terrace View</h4>
+          <span class="poi-name">Terrace View</span>
         </button>
         <div class="content">
           <p>The main view point from Richmond Hill across the River Thames. Sit and relax on the benches, stroll along
@@ -106,7 +106,7 @@
       </div>
       <div class="poi-container">
         <button type="button" class="collapsible rspca-monument">
-          <h4 class="poi-name">RSPCA Monument</h4>
+          <span class="poi-name">RSPCA Monument</span>
         </button>
         <div class="content">
           <p>
@@ -118,7 +118,7 @@
       </div>
       <div class="poi-container">
         <button type="button" class="collapsible terrace-field">
-          <h4 class="poi-name">Terrace Field</h4>
+          <span class="poi-name">Terrace Field</span>
         </button>
         <div class="content">
           <p>
@@ -129,7 +129,7 @@
       </div>
       <div class="poi-container">
         <button type="button" class="collapsible summer-house">
-          <h4 class="poi-name">Summer House</h4>
+          <span class="poi-name">Summer House</span>
         </button>
         <div class="content">
           <p>
@@ -142,7 +142,7 @@
       </div>
       <div class="poi-container">
         <button type="button" class="collapsible river-thames">
-          <h4 class="poi-name">River Thames</h4>
+          <span class="poi-name">River Thames</span>
         </button>
         <div class="content">
           <p>
@@ -156,7 +156,7 @@
       </div>
       <div class="poi-container">
         <button type="button" class="collapsible old-father-thames">
-          <h4 class="poi-name">Old Father Thames</h4>
+          <span class="poi-name">Old Father Thames</span>
         </button>
         <div class="content">
           <p>
@@ -171,7 +171,7 @@
       </div>
       <div class="poi-container">
         <button type="button" class="collapsible bulbous-betty">
-          <h4 class="poi-name">Bulbous Betty</h4>
+          <span class="poi-name">Bulbous Betty</span>
         </button>
         <div class="content">
           <p>
@@ -187,7 +187,7 @@
       </div>
       <div class="poi-container">
         <button type="button" class="collapsible terrace-gardens">
-          <h4 class="poi-name">Terrace Gardens</h4>
+          <span class="poi-name">Terrace Gardens</span>
         </button>
         <div class="content">
           <p>
@@ -221,11 +221,12 @@
     <div id="cafe" class="background-hero-img">
     </div>
 
-    <div id="food-and-drink" class="grid food-grid">
-
+    <div id="food-and-drink" class="section-title">
+    </div>
+    <div  class="grid food-grid">
       <div class="poi-container">
         <button type="button" class="collapsible terrace-view orangery" data-toggle="modal" data-target="#orangery">
-          <h4 class="poi-name">The Orangery</h4>
+          <span class="poi-name">The Orangery</span>
         </button>
         <div id="orangery" class="modal fade" role="dialog">
           <div class="modal-dialog">
@@ -240,7 +241,7 @@
                 </p>
               </div>
               <div class="modal-body">
-                <img src="assets/images/orangery1.jpg" alt="cafe tables and garden outside the orangery cafe"
+                <img src="assets/images/orangery1.webp" alt="cafe tables and garden outside the orangery cafe"
                   class="modal-img">
                 <img src="assets/images/orangery2.jpg" alt="cafe tables and garden outside the orangery cafe"
                   class="modal-img">
@@ -258,7 +259,7 @@
 
       <div class="poi-container">
         <button type="button" class="collapsible rspca-monument hollyhock" data-toggle="modal" data-target="#hollyhock">
-          <h4 class="poi-name">Hollyhock Cafe</h4>
+          <span class="poi-name">Hollyhock Cafe</span>
         </button>
         <div id="hollyhock" class="modal fade" role="dialog">
           <div class="modal-dialog">
@@ -274,11 +275,11 @@
                 </p>
               </div>
               <div class="modal-body">
-                <img src="assets/images/hollyhock1.jpg" alt="cafe tables and garden outside the orangery cafe"
+                <img src="assets/images/hollyhock1.webp" alt="cafe tables and garden outside the orangery cafe"
                   class="modal-img">
-                <img src="assets/images/hollyhock2.jpg" alt="cafe tables and garden outside the orangery cafe"
+                <img src="assets/images/hollyhock2.webp" alt="cafe tables and garden outside the orangery cafe"
                   class="modal-img">
-                <img src="assets/images/hollyhock3.jpg" alt="cafe tables and garden outside the orangery cafe"
+                <img src="assets/images/hollyhock3.webp" alt="cafe tables and garden outside the orangery cafe"
                   class="modal-img">
               </div>
               <div class="modal-footer">
@@ -292,7 +293,7 @@
 
       <div class="poi-container">
         <button type="button" class="collapsible rspca-monument roebuck" data-toggle="modal" data-target="#roebuck">
-          <h4 class="poi-name">The Roebuck</h4>
+          <span class="poi-name">The Roebuck</span>
         </button>
         <div id="roebuck" class="modal fade" role="dialog">
           <div class="modal-dialog">
@@ -307,7 +308,7 @@
                 </p>
               </div>
               <div class="modal-body">
-                <img src="assets/images/roebuck1.jpg" alt="cafe tables and garden outside the orangery cafe"
+                <img src="assets/images/roebuck1.webp" alt="cafe tables and garden outside the orangery cafe"
                   class="modal-img">
                 <img src="assets/images/roebuck2.jpg" alt="cafe tables and garden outside the orangery cafe"
                   class="modal-img">
@@ -347,7 +348,7 @@
           </p>
         </div>
 
-        <img src="assets/images/scooterhire2.jpg" alt="scooters ready for hire">
+        <img src="assets/images/scooterhire2.webp" alt="scooters ready for hire">
 
       </div>
 
@@ -357,7 +358,7 @@
           <p>Get to Richmond Hill by boat leaving from Hampton Court Palace and Kingston</p>
         </div>
 
-        <img src="assets/images/thames2.jpg" alt="bus stop on ham road">
+        <img src="assets/images/thames2.webp" alt="bus stop on ham road">
 
       </div>
 
@@ -370,7 +371,7 @@
             on the Underground District Line.</p>
         </div>
 
-        <img src="assets/images/travel4.jpg" alt="scooter hire rack near the RSPCA monument">
+        <img src="assets/images/travel4.webp" alt="scooter hire rack near the RSPCA monument">
 
       </div>
 
@@ -381,7 +382,7 @@
             London or out toward the M3 and M25</p>
         </div>
 
-        <img src="assets/images/busstop.jpg" alt="bus stop on ham road">
+        <img src="assets/images/busstop.webp" alt="bus stop on ham road">
 
       </div>
     </div>

@@ -1,108 +1,176 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Samuel Petchey
 
-Welcome sampetchey,
+## 'Visit Guide' brochure for Richmond Hill
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[View deployed site here](https://sampetchey-visitrichmon-1t9lmfe5l8m.ws-eu47.gitpod.io)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![](images/visitguide_logo.png)
 
-## Gitpod Reminders
+The online 'VisitGuide to Richmond Hill' provides information and promotes Richmond Hill as a visitor destination. The brand 'VisitGuide' has also been created as a potential source of visitor guides. This website is an example of one of these guides, featuring information on points of interest, places to eat and drink, and travel.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The website features images portraying the peace, beauty and charm of Richmond Hill. It takes viewers on a journey from seeing the view, learning about places of interest, where they might eat and how to get around the area. The scroll layout helps make this an intuitive journey.
 
-`python3 -m http.server`
+The goals of the website are:
+* To sell Richmond Hill as a visitor destination. 
+* To provide organisations such as the Local Council a way to encourage tourism in the area.
+* To promote businesses shown in the guide. 
+* To establish 'VisitGuide' as a useful, informative and complimentary visitor guide brand, and build a subscriber list for marketing opportunities.
 
-A blue button should appear to click: _Make Public_,
+User goals are:
+* To discover places of interest and food not previously known.
+* To plan getting about the area.
+ 
 
-Another blue button should appear to click: _Open Browser_.
+## User Experience
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Ideal client
 
-A blue button should appear to click: _Make Public_,
+#### The ideal visitor to this site is:
+* Looking for places to visit in the London area.
+* On holiday, or a local resident.
 
-Another blue button should appear to click: _Open Browser_.
+#### This site helps achieve these aims:
+* Using high quality, engaging images showing qualities of the location.
+* Providing historical context to arouse curiosity. 
+* Displaying information required to make the trip and get around.
+* By focusing on the beauty and character of the location.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+## Features
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+The page opens with an attention grabbing panoramic image slowly scrolling from left to right. The subtle movement of the image helps the content stand out. It encourages viewers to linger on the page to view the whole panorama.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+The website is in a continuous scroll format. All content can be scrolled through or targeted using the navigation bar. The three sections are Places of Interest, Food & Drink and Travel. Each section presents information in slightly different ways, either by expanding hidden content, opening a modal window or in a gallery-style grid.
 
-------
+At the top, the header shows links to social media sites related to the site. The immediate prominence and constant visibility of social links was noted from other tourist websites, due to the importance of social media in tourism. Likewise, the brand logo 'VisitGuide' is always visible and clickable. 
 
-## Release History
+A button to subscribe to a VisitGuide newsletter is also visible at all times. Clicking this opens an expanding form requesting a name and email address. 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+The page layout is responsive to different screen sizes, breaking into columns for larger screens. The navigation bar information switches to icons for smaller screens. At the bottom of the scroll is a footer providing links to further administration details and terms and conditions.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Home - Top of the page
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+The scrolling panoramic image is the most prominent feature of the home, welcoming view. Clicking on the 'Richmond Hill' title, or 'VisitGuide' brand will take viewers back to the top of the page. With the view as the central opening feature, the other essential elements of the brand and subscribe button are also given due prominence. This initial lack of information ensures the most important information is delivered first.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+A logo for VisitGuide has been designed as a catchy way of showing the purpose of the brand. The colours are summery, like that of an icecream parlour. Deliberately, the logo is the only part of the site that is multi-coloured, so as to keep it standing out.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Places of Interest
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Scrolling down, the background colour gradually darkens so as to highlight new images of various points of interest. Thee include: Terrace View, RSPCA Monument, Terrace Field, Summer House, River Thames, Old Father Thames, Bulbous Betty and Terrace Gardens. Clicking on an image reveals curious information about each place, its history and location. 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Food & Drink
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+When scrolling downwards, before the Food & Drink section, a new panoramic is unveiled. This new image reveals the Orangery Cafe and garden. It helps define and divide the new section. 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+Three locations for food and drink are introduced: The Orangery, Hollyhock Cafe and The Roebuck Pub. Clicking on each one opens up a modal containing information, a link to the menu and a gallery of images.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Travel
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+As before, to seperate the next section another new panoramic image of the Terrace Gardens appears before the Travel section. In this final section the information needs to be immediately visible, rather than clicked to find. Therefore each mode of travel (scooters, boat, bus & train and car) is contained in a simple box layout.
 
-------
 
-## FAQ about the uptime script
+### Subscribe to the Newsletter
 
-**Why have you added this script?**
+The subscription form obtains contact information of customers. The simple name and email address format make subscribing quick and easy. It enables future contact and promotions. 
+ 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Colour Scheme and Design
 
-**How will this affect me?**
+A simple green/turquoise and white colour scheme was chosen to compliment the theme of nature and landscape. The contrast of dark green and white provides contrast where necessary, such as making text readable. A single colour theme also prevented colour clashes with images, ensuring they are not distracted from. 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Features to Implement in future
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+- The type and amount of information in this version of the site is basic and can be expounded. Expanding boxes and modals could include maps and reviews. They could specifically highlight promotions available at the businesses. 
+- 'VisitGuide' could become and overarching brand for visitor guides. 'Kingfisher Guides' (https://kingfishervisitorguides.com/) is an example of what 'VisitGuide' could grow into becoming and was used as inspiration in constructing this site. A home directory of locations could be listed when 'VisitGuide' is clicked, leading  to places of interest across the globe, or within a defined area such as 'London VisitGuide'.
+- Additional sections of the webpage might include travel blogs, maps, advertising, local events and tourist reviews. 
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+## Technologies Used
 
-**Can I opt out?**
+- This project uses HTML and CSS programming languages.
+- [Google Fonts](https://fonts.google.com/)
+    - The project uses **Google fonts** to style the website fonts.
+- [BootstrapCDN](https://www.bootstrapcdn.com/)
+    - The project uses **Bootstrap4** to produce the modals in the Food & Drink section.
+- [FontAwesome](https://www.bootstrapcdn.com/fontawesome/)
+    - The project also uses **Fontawesome** to provide icons in place of text for smaller screens 
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
 
+## Testing 
+
+Testing information can be found in separate [TESTING.md file](TESTING.md)
+
+
+## Deployment
+
+This project was developed using GitPod, committed to git and pushed to GitHub using the terminal. 
+
+To open this page to GitHub Pages from its [GitHub repository](https://github.com/sampetchey/visit-richmond-hill), the following steps are taken: 
+1. Log into GitHub. 
+2. From the list of repositories on the screen, select **sampetchey/visit-richmond-hill**.
+3. From the menu items near the top of the page, select **Settings**.
+4. Scroll down to the **GitHub Pages** section.
+5. Under **Source** click the drop-down menu labelled **None** and select **Master Branch**
+6. On selecting Master Branch the page is automatically refreshed, the website is now deployed. 
+7. Scroll back down to the **GitHub Pages** section to retrieve the link to the deployed website.
+
+At the moment of submitting this Milestone project the Development Branch and Master Branch are identical. 
+
+
+### How to run this project locally
+
+To clone this project into Gitpod you will need:
+1. A Github account. [Create a Github account here](https://github.com/)
+2. Use the Chrome browser 
+
+Then follow these steps:
+1. Install the [Gitpod Browser Extentions for Chrome](https://www.gitpod.io/docs/browser-extension/)
+2. After installation, restart the browser
+3. Log into [Gitpod](https://gitpod.com) with your gitpod account.
+4. Navigate to the [Project GitHub repository](https://github.com/sampetchey/visit-richmond-hill)
+5. Click the green "Gitpod" button in the top right corner of the respository
+6. This will trigger a new gitpod workspace to be created from the code in github where you can work locally.
+
+To work on the project code within a local IDE such as VSCode, Pycharm etc:
+1. Follow this link to the [Project GitHub repository](https://github.com/sampetchey/visit-richmond-hill).
+2. Under the repository name, click "Clone or download".
+3. In the Clone with HTTPs section, copy the clone URL for the repository. 
+4. In your local IDE open the terminal.
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type ```git clone```, and then paste the URL you copied in Step 3.
+```console
+git clone https://github.com/USERNAME/REPOSITORY
 ```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+7. Press Enter. Your local clone will be created.
 
-**Anything more?**
+Further reading and troubleshooting on cloning a repository from GitHub [here](https://help.github.com/en/articles/cloning-a-repository).
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
+## Credits
 
-Happy coding!
+### Content
+- The background scroll effect was adjusted from https://css-tricks.com/books/fundamental-css-tactics/infinite-scrolling-background-image/
+- The template for a popup form was taken from https://www.w3schools.com/howto/howto_js_popup_form.asp 
+- The Bootstrap modal code used in the Food & Drink section was adjusted from https://www.w3schools.com/bootstrap/bootstrap_modal.asp#:~:text=To%20trigger%20the%20modal%20window,modal%22%20opens%20the%20modal%20window
+- The four squares grid layout in the travel section was adjusted from https://get.foundation/building-blocks/blocks/four-squares-layout.html
+- The text and information on the site was written and produced by Sam Petchey using information found on tourist information plaques and Richmond Hill.
+
+
+### Media
+- All site photos for the site were taken by Sam Petchey in 2022.
+- Photo size, colour, saturation and design were adjusted using Apple Preview.
+
+
+### Acknowledgements
+
+- The inspiration for this website came from personal trips to Richmond Hill.
+
+
+### Disclaimer
+
+This website has been created to demonstrate html and css coding skills. It is not sponsored by any business or authority associated with Richmond. 
