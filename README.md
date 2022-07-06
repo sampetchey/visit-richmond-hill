@@ -2,7 +2,7 @@
 
 ## 'Visit Guide' brochure for Richmond Hill
 
-[View deployed site here](https://sampetchey-visitrichmon-1t9lmfe5l8m.ws-eu47.gitpod.io)
+[View deployed site here](https://8000-sampetchey-visitrichmon-1t9lmfe5l8m.ws-eu51.gitpod.io/#richmond-hill)
 
 ![](images/visitguide_logo.png)
 
