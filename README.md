@@ -4,7 +4,7 @@
 
 [View deployed site here](https://8000-sampetchey-visitrichmon-1t9lmfe5l8m.ws-eu51.gitpod.io/#richmond-hill)
 
-![](images/visitguide_logo.png)
+![](https://github.com/sampetchey/visit-richmond-hill/blob/main/assets/images/rh-home.png)
 
 The online 'VisitGuide to Richmond Hill' provides information and promotes Richmond Hill as a visitor destination. The brand 'VisitGuide' has also been created as a potential source of visitor guides. This website is an example of one of these guides, featuring information on points of interest, places to eat and drink, and travel.
 
