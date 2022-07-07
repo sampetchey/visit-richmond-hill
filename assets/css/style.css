@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Tangerine:100,200,300,400,500,600,700|Lato:100,200,300,400,500,600,700|Roboto:500, 600, 700');
-
 html {
     position: relative;
     min-height: 100%;
     scroll-behavior: smooth;
 }
+
+/* fixed header with social links */
 
 header {
     position: relative;
@@ -32,7 +32,6 @@ header div a {
 }
 
 header div a:hover {
-    text-size-adjust: 2em;
     text-shadow: 2px 2px 8px gray;
 }
 
@@ -51,7 +50,7 @@ header div a:hover {
     box-shadow: 0px 0px 5px #aaaaaa;
 }
 
-/* background hero image and scroll animation */
+/* hero image size, position and scroll animation */
 
 @-webkit-keyframes backgroundScroll {
     from {
@@ -85,6 +84,8 @@ header div a:hover {
     top: 5vh;
 }
 
+/* main opening hero img */
+
 #view1 {
     height: 95vh;
     background: url("../images/view1.webp") no-repeat;
@@ -92,6 +93,8 @@ header div a:hover {
     position: sticky;
     z-index: -2;
 }
+
+/* cafe hero img */
 
 #cafe {
     height: 100vh;
@@ -103,6 +106,8 @@ header div a:hover {
     z-index: -2
 }
 
+/* terrace gardens hero img */
+
 #garden {
     height: 100vh;
     background: url("../images/terracegardens3.webp") no-repeat;
@@ -113,7 +118,7 @@ header div a:hover {
     z-index: -1
 }
 
-/* blank section as buffer before points of interest*/
+/* blank section as buffer before points of interest to show hero img*/
 
 .blank {
     width: 100vw;
@@ -137,7 +142,7 @@ header div a:hover {
     padding-top: 3vh;
 }
 .title-text {
-    font-family: tangerine, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: tangerine, Verdana, sans-serif;
     font-size: 7vw;
     color: #fff;
     text-shadow: 2px 2px 4px #726a6a;
@@ -151,6 +156,7 @@ header div a:hover {
 .title a:hover {
     text-decoration: none;
 }
+
 /* navigation bar and items */
 nav {
     width: 100vw;
@@ -187,6 +193,7 @@ nav a:hover h5{
 }
 
 /* subscribe button to open form - fixed bottom right */
+
 .open-button {
   background-color: #0f7e8f;
   color: white;
@@ -256,7 +263,7 @@ nav a:hover h5{
   opacity: 1;
 }
 
-/* section titles - buffer zones to allow space for main title and nav */
+/* section titles - buffer zone to allow space above sections for title to show */
 
 .section-title {
     width: 100%;
@@ -277,7 +284,6 @@ nav a:hover h5{
 }
 
 /* places of interest section layout */
-
 
 .grid {
     width: 100vw;
@@ -343,7 +349,10 @@ nav a:hover h5{
 .poi:nth-child(8) {
     grid-area: terrace-gardens;
 }
-@media screen and (min-width: 768px) {
+
+/* points of interest responsive layout */
+
+@media screen and (min-width: 1000px) {
     .poi-grid { 
         grid-template-areas: 
         "terrace-view rspca-monument"
@@ -357,32 +366,9 @@ nav a:hover h5{
     }
 }
 
-/*
-@media screen and (min-width: 992px) {
-    .food-grid { 
-        grid-template-areas: 
-        "terrace-view rspca-monument terrace-field terrace-gate";
-    }
-} */
+/* places of interest items design, expand on click */
 
-/*
-@media screen and (min-width: 992px) {
-    .poi-grid { 
-        grid-template-areas: 
-        "terrace-view rspca-monument terrace-field" 
-        "terrace-gate old-father-thames" 
-        "bulbous-betty summer-house terrace-gardens";}
-}
-@media screen and (min-width: 1200px) {
-    .poi-grid { 
-        grid-template-areas: 
-        "terrace-view rspca-monument terrace-field terrace-gate" 
-        "old-father-thames bulbous-betty summer-house terrace-gardens";}
-}
-*/
-/* places of interest item design */
 .poi-container {
-    
     font-size: var(--fs-400);
     height: auto;
     width: auto;
@@ -395,7 +381,6 @@ nav a:hover h5{
     background-repeat: no-repeat;
     background-size: cover;    
 }
-
 
 .collapsible {
     height: 50vh;
@@ -423,23 +408,26 @@ nav a:hover h5{
     color: #fff;
 }
   
-  .active, .poi-container:hover {
+.active, .poi-container:hover {
     text-decoration: none;
-  }
+}
   
-  .content {
+.content {
     margin: 0;
     padding: 10px;
     display: none;
     overflow: hidden;
     background-color: #fff;
     color: #0f7e8f;
-  }
-  button:focus {
+}
+
+button:focus {
     border: none;
     outline: none;
- }
+}
+
 /*.......................places of interest images.......*/
+
 .terrace-view {
     background-image: url("../images/view4.webp");
 }
@@ -450,7 +438,7 @@ nav a:hover h5{
     background-image: url("../images/terrace-field.webp");
 }
 .summer-house {
-    background-image: url("../images/summerhouse1.jpg");
+    background-image: url("../images/summerhouse1.webp");
 }
 .river-thames {
     background-image: url("../images/thames3.webp");
@@ -465,7 +453,7 @@ nav a:hover h5{
     background-image: url("../images/terracegardens2.webp");
 }
 
-/* food and drink tile images */
+/* food and drink tile background images */
 
 .orangery {
     background-image: url("../images/orangery1.webp");
@@ -480,10 +468,10 @@ nav a:hover h5{
 }
 
 
-/* food and drink */
+/* food and drink section */
 
 .modal-content {
-    padding: 1fr;
+    
     min-width: 50vw;
     border: #0f7e8f;
     border-style: solid;
@@ -506,7 +494,7 @@ nav a:hover h5{
     object-fit: contain;
 }
 
-/* section dividing bars */
+/* decorative dividing bars food & drink - travel */
 
 .bar1 {
     width: 100%;
@@ -529,31 +517,17 @@ nav a:hover h5{
     background-color: #0f7e8f;
 }
 
-/*.......................................travel...........................*/
+/* travel section */
 
-/*
-
-.travel-box {
-    min-width: 90vw;
-    height: auto;
-    margin: 25px;
-    border: #fff;
-    border-style:solid;
-    border-width: 5px;
-    border-radius: 0.2rem;
-    background-color: rgb(255, 255, 255, 0.8);
-    display: flex;
-    padding: 5%; */
-}
 .travel-info {
-    width: 3fr;
+    
     height: auto;
     color: #0f7e8f;
     padding-right: 25px;      
 }
 
 .travel-imgs {
-    width: 1fr;
+    
     height: auto;
     background-color: #0f7e8f;
     padding: 5px;
@@ -568,9 +542,9 @@ nav a:hover h5{
     padding-top: 5vh;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (1fr)[2];
+    -ms-grid-rows: [2];
         grid-template-rows: repeat(2, 1fr);
-    -ms-grid-columns: (1fr)[4];
+    -ms-grid-columns: [4];
         grid-template-columns: repeat(4, 1fr);
     width: 100vw;
     height: 100vh;
@@ -598,10 +572,12 @@ nav a:hover h5{
     background-repeat: no-repeat;
     box-shadow: 0 0 4px #0f7e8f;
 }
+
+/* responsive settings for travel section layout */
   
   @media screen and (max-width: 60em) {
     .container {
-      -ms-grid-rows: (1fr)[4];
+      -ms-grid-rows: [4];
           grid-template-rows: repeat(4, 1fr);
     }
   }
@@ -682,8 +658,8 @@ nav a:hover h5{
     margin: 0;
   }
   
+/* footer styling */
 
-/*.........................................footer..........................*/
 footer {
     width: 100%;
     height: 4vh;
@@ -705,13 +681,12 @@ footer div a {
 footer div a:hover {
     color: #fff;
     text-decoration: none;
-    text-size-adjust: 4em;
     text-shadow: 2px 2px 8px gray;
 }
 
 /* responsive small screen settings */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .logo-img {
         max-height: 10vh;
         left: 0;
@@ -771,405 +746,7 @@ footer div a:hover {
       
       /* popup form - hidden by default */
     .form-popup {
-        right: none; 
-        left: calc(50% - 140px);    
+        left: calc(50% - 140px);
+        right: calc(50% - 140px);    
       }
     }
-/*.......................................poi light boxes and photos...
-.row > .column {
-    padding: 0 8px;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Create four equal columns that floats next to eachother 
-  .column {
-    float: left;
-    width: 100%;
-  }
-  
-  /* The Modal (background) 
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 20;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: black;
-  }
-  
-  /* Modal Content 
-  .modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    width: 90%;
-    max-width: 1200px;
-  }
-  
-  /* The Close Button 
-  .close {
-    color: white;
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 35px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #999;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  /* Hide the slides by default 
-  .mySlides {
-    display: none;
-  }
-  
-  /* Next & previous buttons 
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right 
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through 
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) 
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* Caption text 
-  .caption-container {
-    text-align: center;
-    background-color: black;
-    padding: 2px 16px;
-    color: white;
-  }
-  
-  img.demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
-  
-  img.hover-shadow {
-    transition: 0.3s;
-  }
-  
-  .hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  
-.portfolio {
-    margin-top: 28vh;
-    display: grid;
-    height: auto;
-    grid-template-rows: repeat(8, 100px);
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 10px;
-    padding: 10px;
-  }
-  
-.portfolio-item {
-    background: lightcyan;
-    color: light-gray;
-    font-weight: font-bold;
-    display: flex;
-    /*justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-    background-size: cover;
-    background-position: top left;
-    transition: all ease-in-out 300ms;
-    position: relative;
-    
-  }
-    
-.portfolio-item.small {
-      grid-row: span 1;
-      grid-column: span 1;
-    }
-    
-.portfolio-item.medium {
-      grid-row: span 2;
-      grid-column: span 2;
-    }
-    
-.portfolio-item.large {
-      grid-row: span 3;
-      grid-column: span 3;
-    }
-    
-.portfolio-item.tall {
-      grid-row: span 3;
-      grid-column: span 2;
-    }
-    
-.portfolio-item.wide {
-      grid-row: span 2;
-      grid-column: span 3;
-    }
-      
-.portfolio-item:hover {
-      color: white;
-      text-shadow: 0 0 5px rgba(0, 0, 0, 0.85);
-    }
-  
-  
-  .two {
-    background-image: url(//unsplash.it/800/600);
-    
-    &::before {
-      content: '';
-      display: block;
-      background: $black;
-      opacity: 0.8;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      transition: all ease-in-out 300ms;
-      z-index: -1;
-    }
-    
-    &:hover::before {
-      opacity: 0.2;
-    }
-  }
-  
-.info {
-    background: pink;
-    display: flex;
-    margin: 0;
-    justify-content: center;
-    
-    
-}
-.info-card {
-    background: lightblue;
-    height: auto;
-    width: 1fr;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    padding: 0.5em 3em;
-}
-.card-title {
-    background: antiquewhite;
-    color: darkblue;
-    margin: 0;
-}
-.card-img {
-    grid-area: img;
-    background: pink;
-}
-.card-title {
-    grid-area: title;
-    background: lightblue;
-}
-.card-content {
-    grid-area: content;
-    background: lightgreen;
-}
-aside {
-    grid-area: sidebar;
-    background: darkgrey;
-    padding: 1.5em;
-}
-*/
-/*..............................header - brand & socials..*/
-    
-}
-/*................................Welcome Section.........
-.welcome {
-    background-color: aliceblue;
-    min-height: 100vh;
-    width: 100vw;
-    padding-top: 5vh;
-    display: flex;
-    flex-direction: column;
-}
-.welcome div {
-    background-color: lightblue;
-}
-/
-/*.............................home section...........
-#home {
-    margin-top: 5vh;
-    display: grid;
-    grid-template-rows: 25vh 40vh 30vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: ". title ." "see stay go" ". subscribe .";
-}
-/*.............................pano-view hero image...
-/*.............................header logo..........
-.logo-nav-subs_container {
-    height: 95vh;
-    width: 100vw;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.logo {
-    max-height: 25%;
-    max-width: 50%;
-    object-fit: scale-down;
-}
-.home-menu {
-    height: 50%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-div .menu {
-    max-width: 284px;
-    padding: 10px 10px 20px 10px;
-    border: 1px solid #BFBFBF;
-    background-color: white;
-    box-shadow: 10px 10px 5px #aaaaaa;
-  }
-/*..............................Richmond Hill Heading and nav..
-h1 {
-    text-align: left;
-    font-family: tangerine, cursive, sans-serif;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px 4px gray;
-    color: white;
-    padding: 10px;
-}
-#logo {
-    float:left;
-}
-#logo, #menu {
-    line-height: 75px;
-}
-#menu {
-    font-size: 110%;
-    list-style: none;
-    color: white;
-}
-#menu li {
-    float: ;
-    margin-right: 40px;
-}
-.active {
-    text-shadow: 2px 2px 8px rgb(85, 128, 94);
-}
-/*..............................Navigation tiles - Sights, Tastes, & Stays ..
-.row {
-    display: flex;
-  }
-  
-  .column {
-    flex: 33.33%;
-    padding: 5px;
-  }
-#sights-tastes-stay {
-    margin: 0;
-    display: flex;
-    
-}
-.square-lg {
-    list-style-type: none;
-    border: 5vw;
-    min-width: 20vw;
-    min-height: 20vw;
-    transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    background-repeat: no-repeat;
-    background-size: cover;
-}   
-#sights {
-    background: url("../images/sights.png");
-    background-position: center;
-    
-}
-#tastes {
-    background: url("../images/tastes.png");
-    background-position: center;
-}
-#ßstay {
-    background: url("../images/stay.png");
-    background-position: center;
-}
-/*..............................Hero image and animation..
-#hero-image {
-    height: 40vh;
-    width: 60vw;
-}
-/*
-.subscribe h2 {
-    color: #fff;
-    text-shadow: 2px 2px 4px #726a6a;
-    
-    margin: 0;
-    text-align: center;
-}
-.subscribe button {
-    border: none;
-    color: #0f7e8f;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    box-shadow: 2px 2px 4px #726a6a;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-.subscribe-form {
-    display: none;
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    z-index: 100;
-}
-*/

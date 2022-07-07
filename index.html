@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -17,6 +17,9 @@
 </head>
 
 <body>
+
+  <!--social header, always visible-->
+
   <header>
     <div class="connect">CONNECT WITH US |</div>
     <div>
@@ -30,15 +33,17 @@
     </div>
   </header>
   <div>
-    <a href="#richmond-hill"><img src="assets/images/visitguide_logo.png" alt="Visit Guide Richmond Hill logo"
+    <a href="#richmond-hill"><img src="assets/images/visitguide_logo.webp" alt="Visit Guide Richmond Hill logo"
         class="logo-img"></a>
   </div>
   <section>
+    <!--main title-->
     <div class="title">
       <a href="#richmond-hill">
         <h1 class="title-text">Richmond Hill</h1>
       </a>
     </div>
+    <!--links to three sections-->
     <nav>
       <a href="#places-of-interest">
         <h5>Places of Interest</h5>
@@ -54,12 +59,17 @@
       </a>
     </nav>
   </section>
+
+  <!--main hero image, view from richmond hill-->
   <div id="view1" class="background-hero-img">
   </div>
 
   <section id="richmond-hill">
+    <!--buffer allowing space for title-->
     <div class="blank">
     </div>
+
+    <!--subscribe button and form-->
     <div class="subscribe">
       <div>
         <button class="open-button" onclick="openForm()">SUBSCRIBE TO OUR NEWSLETTER</button>
@@ -80,16 +90,20 @@
         <button type="submit" class="btn" value="subscribe">SUBSCRIBE</button>
         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
       </form>
-      <script>
-        function openForm() {
-          document.getElementById("subscribe-form").style.display = "block";
-        }
+    </div>
+    <script>
+      function openForm() {
+        document.getElementById("subscribe-form").style.display = "block";
+      }
 
-        function closeForm() {
-          document.getElementById("subscribe-form").style.display = "none";
-        }
-      </script>
+      function closeForm() {
+        document.getElementById("subscribe-form").style.display = "none";
+      }
+    </script>
   </section>
+
+  <!--places of itnterest section-->
+
   <section id="places-of-interest">
     <div class="section-title">
     </div>
@@ -197,6 +211,8 @@
         </div>
       </div>
     </div>
+
+    <!--js to enable expanding points of interest boxes-->
     <script>
       var coll = document.getElementsByClassName("collapsible");
       var i;
@@ -212,18 +228,17 @@
         });
       }
     </script>
-
-
   </section>
 
   <section>
-
+    <!--second hero image, outside orangery cafe-->
     <div id="cafe" class="background-hero-img">
     </div>
 
+    <!--food and drink section-->
     <div id="food-and-drink" class="section-title">
     </div>
-    <div  class="grid food-grid">
+    <div class="grid food-grid">
       <div class="poi-container">
         <button type="button" class="collapsible terrace-view orangery" data-toggle="modal" data-target="#orangery">
           <span class="poi-name">The Orangery</span>
@@ -243,10 +258,9 @@
               <div class="modal-body">
                 <img src="assets/images/orangery1.webp" alt="cafe tables and garden outside the orangery cafe"
                   class="modal-img">
-                <img src="assets/images/orangery2.jpg" alt="cafe tables and garden outside the orangery cafe"
+                <img src="assets/images/orangery2.jpg" alt="a large mirror, contemporary decor of inside orangery cafe"
                   class="modal-img">
-                <img src="assets/images/orangery3.jpg" alt="cafe tables and garden outside the orangery cafe"
-                  class="modal-img">
+                <img src="assets/images/orangery3.jpg" alt="the cafe gate and sign to the orangery " class="modal-img">
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -275,12 +289,10 @@
                 </p>
               </div>
               <div class="modal-body">
-                <img src="assets/images/hollyhock1.webp" alt="cafe tables and garden outside the orangery cafe"
+                <img src="assets/images/hollyhock1.webp" alt="view of outside hollyhock cafe from the flower garden"
                   class="modal-img">
-                <img src="assets/images/hollyhock2.webp" alt="cafe tables and garden outside the orangery cafe"
-                  class="modal-img">
-                <img src="assets/images/hollyhock3.webp" alt="cafe tables and garden outside the orangery cafe"
-                  class="modal-img">
+                <img src="assets/images/hollyhock2.webp" alt="view of the hollyhock cafe veranda" class="modal-img">
+                <img src="assets/images/hollyhock3.webp" alt="view of the hollyhock cafe veranda" class="modal-img">
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -308,12 +320,10 @@
                 </p>
               </div>
               <div class="modal-body">
-                <img src="assets/images/roebuck1.webp" alt="cafe tables and garden outside the orangery cafe"
+                <img src="assets/images/roebuck1.webp" alt="outside view of the roebuck pub" class="modal-img">
+                <img src="assets/images/roebuck2.jpg" alt="inside the pub, comfortable chairs and traditional setting"
                   class="modal-img">
-                <img src="assets/images/roebuck2.jpg" alt="cafe tables and garden outside the orangery cafe"
-                  class="modal-img">
-                <img src="assets/images/roebuck3.jpg" alt="cafe tables and garden outside the orangery cafe"
-                  class="modal-img">
+                <img src="assets/images/roebuck3.jpg" alt="the roebuck cafe wine menu" class="modal-img">
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -325,15 +335,18 @@
       </div>
     </div>
 
+    <!--decoration to divide sections-->
     <div class="bar1"></div>
     <div class="bar2"></div>
     <div class="bar3"></div>
 
   </section>
 
+  <!--third hero image, terrace gardens-->
   <div id="garden" class="background-hero-img">
   </div>
 
+  <!--travel section-->
   <section id="travel">
     <div class="section-title">
     </div>
@@ -348,7 +361,7 @@
           </p>
         </div>
 
-        <img src="assets/images/scooterhire2.webp" alt="scooters ready for hire">
+        <img src="assets/images/scooterhire2.jpg" alt="scooters ready for hire">
 
       </div>
 
@@ -358,7 +371,7 @@
           <p>Get to Richmond Hill by boat leaving from Hampton Court Palace and Kingston</p>
         </div>
 
-        <img src="assets/images/thames2.webp" alt="bus stop on ham road">
+        <img src="assets/images/thames2.webp" alt="boats moored along the bank of the river thames">
 
       </div>
 
@@ -382,18 +395,18 @@
             London or out toward the M3 and M25</p>
         </div>
 
-        <img src="assets/images/busstop.webp" alt="bus stop on ham road">
+        <img src="assets/images/busstop.jpg" alt="bus stop on ham road">
 
       </div>
     </div>
-
+    <!--buffer to allow space for subscribe button and background view-->
     <div class="section-title">
     </div>
     <div class="blank">
     </div>
-
   </section>
 
+  <!--administrative information-->
   <footer>
     <div><a href="#" target="_blank">about</a></div>
     <div><a href="#" target="_blank">T&Cs</a></div>
