@@ -42,7 +42,7 @@ The page opens with an attention grabbing panoramic image slowly scrolling from 
 
 ![](https://github.com/sampetchey/visit-richmond-hill/blob/main/assets/images/rh-home.png)
 
-The website is in a continuous scroll format. All content can be scrolled through or targeted using the navigation bar. The three sections are Places of Interest, Food & Drink and Travel. Each section presents information in slightly different ways, either by expanding hidden content, opening a modal window or in a gallery-style grid.
+The website is in a simgle page continuous scroll format in three sections. All content can be scrolled through or targeted using the navigation bar. The three sections are Places of Interest, Food & Drink and Travel. Each section presents information in slightly different ways, either by expanding hidden content, opening a modal window or in a grid.
 
 At the top, the header shows links to social media sites related to the site. The immediate prominence and constant visibility of social links was noted from other tourist websites, due to the importance of social media in tourism. Likewise, the brand logo 'VisitGuide' is always visible and clickable. 
 
