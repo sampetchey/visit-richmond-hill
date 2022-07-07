@@ -72,13 +72,13 @@ Scrolling down, the background colour gradually darkens so as to highlight new i
 
 ### Space and Image between Sections
 
-Between each section a new scrolling background hero image is revealed. This helps target different types of viewers. Those looking for information fast can use the anchor links to directly access sections. Those more curious can scroll through the images and absorb the characeristocs of the location. The site is built on the principle that images sell better than text.
+Between each section a new scrolling background hero image is revealed. This helps target different types of viewers. Those looking for information fast can use the anchor links to directly access sections. Those more curious can scroll through the images and absorb the characteristics of the location. The site is built on the principle that images sell better than text.
 
 ![](https://github.com/sampetchey/visit-richmond-hill/blob/main/assets/images/rh-cafe-hero-img.png)
 
 ### Food & Drink
 
-Three locations for food and drink are introduced: The Orangery, Hollyhock Cafe and The Roebuck Pub. Clicking on each one opens a modal containing information, a link to the menu (currently a placeholder '#' link) and a gallery.
+Three locations for food and drink are introduced: The Orangery, Hollyhock Cafe and The Roebuck Pub. Clicking on each one opens a modal containing information, a link to the venue menu (currently a placeholder '#' link) and a gallery.
 
 ![](https://github.com/sampetchey/visit-richmond-hill/blob/main/assets/images/rh-foodanddrink-modal.png)
 
@@ -102,7 +102,7 @@ The subscription form obtains contact information of customers. The simple name 
 
 ## Colour Scheme and Design
 
-A simple green/turquoise and white colour scheme was chosen to compliment the theme of nature and landscape. The contrast of dark green and white provides contrast where necessary, such as making text readable. A single colour theme also prevented colour clashes with images, ensuring they are not distracted from. A gradient background color on each section was used to divide sections without them becoming blocky, whilst enhancing the foreground images. The gradient also provides a helpful downward projection. 
+A simple green/turquoise and white colour scheme was chosen to compliment the theme of nature and landscape. The contrast of dark green and white provides contrast where necessary, such as making text readable. A single green colour theme also prevented colour clashes with images, ensuring they are not distracted from. A gradient background color on each section was used to divide sections without becoming blocky, whilst enhancing the foreground images. The gradient also provides a helpful downward projection. 
 
 ## Features to Implement in future
 
@@ -178,7 +178,7 @@ git clone https://github.com/USERNAME/REPOSITORY
 - The VisitGuide logo was created by Sam Petchey using Canva.
 
 ### Media
-- All site photos for the site were taken on location at Richmond Hill by Sam Petchey in 2022.
+- All photos were taken on location at Richmond Hill by Sam Petchey in 2022.
 - Photo size, colour, saturation and design were adjusted using Apple Preview.
 
 ### Acknowledgements
