@@ -84,7 +84,7 @@ Three locations for food and drink are introduced: The Orangery, Hollyhock Cafe 
 
 ### Decorative Bars
 
-To add interest and creativity, seperated horizontal bars provide a window to the previous background image. 
+To add interest and creativity, separated horizontal bars provide a window to the previous background image. 
 
 ![](https://github.com/sampetchey/visit-richmond-hill/blob/main/assets/images/rh-bars.png)
 
