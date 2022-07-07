@@ -124,7 +124,7 @@ A simple green/turquoise and white colour scheme was chosen to compliment the th
 
 ![](https://github.com/sampetchey/visit-richmond-hill/blob/main/assets/images/web-perf-audit.png)
 
-Testing information can be found in separate [TESTING.md file](TESTING.md)
+The site has been tested using html and css validators and there are no errors in the code.
 
 ## Deployment
 
