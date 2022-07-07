@@ -82,7 +82,7 @@ Three locations for food and drink are introduced: The Orangery, Hollyhock Cafe 
 
 ![](https://github.com/sampetchey/visit-richmond-hill/blob/main/assets/images/rh-foodanddrink-modal.png)
 
-###Decorative Bars
+### Decorative Bars
 
 To add interest and creativity, seperated horizontal bars provide a window to the previous background image. 
 
