@@ -2,25 +2,25 @@
 
 ## 'Visit Guide' brochure for Richmond Hill
 
-[View deployed site here](https://8000-sampetchey-visitrichmon-1t9lmfe5l8m.ws-eu51.gitpod.io/#richmond-hill)
-
-![](https://github.com/sampetchey/visit-richmond-hill/blob/main/assets/images/rh-home.png)
+[View deployed site here](https://sampetchey.github.io/visit-richmond-hill/)
 
 The online 'VisitGuide to Richmond Hill' provides information and promotes Richmond Hill as a visitor destination. The brand 'VisitGuide' has also been created as a potential source of visitor guides. This website is an example of one of these guides, featuring information on points of interest, places to eat and drink, and travel.
+
+![](https://github.com/sampetchey/visit-richmond-hill/blob/main/assets/images/visitguide-logo.png)
 
 The website features images portraying the peace, beauty and charm of Richmond Hill. It takes viewers on a journey from seeing the view, learning about places of interest, where they might eat and how to get around the area. The scroll layout helps make this an intuitive journey.
 
 The goals of the website are:
 * To sell Richmond Hill as a visitor destination. 
 * To provide organisations such as the Local Council a way to encourage tourism in the area.
-* To promote businesses shown in the guide. 
-* To establish 'VisitGuide' as a useful, informative and complimentary visitor guide brand, and build a subscriber list for marketing opportunities.
+* To promote businesses shown in the guide.
+* To build a subscriber list for marketing opportunities.
+* To establish 'VisitGuide' as a useful, informative and complimentary visitor guide brand.
 
 User goals are:
 * To discover places of interest and food not previously known.
 * To plan getting about the area.
  
-
 ## User Experience
 
 ### Ideal client
@@ -40,14 +40,21 @@ User goals are:
 
 The page opens with an attention grabbing panoramic image slowly scrolling from left to right. The subtle movement of the image helps the content stand out. It encourages viewers to linger on the page to view the whole panorama.
 
+![](https://github.com/sampetchey/visit-richmond-hill/blob/main/assets/images/rh-home.png)
+
 The website is in a continuous scroll format. All content can be scrolled through or targeted using the navigation bar. The three sections are Places of Interest, Food & Drink and Travel. Each section presents information in slightly different ways, either by expanding hidden content, opening a modal window or in a gallery-style grid.
 
 At the top, the header shows links to social media sites related to the site. The immediate prominence and constant visibility of social links was noted from other tourist websites, due to the importance of social media in tourism. Likewise, the brand logo 'VisitGuide' is always visible and clickable. 
 
-A button to subscribe to a VisitGuide newsletter is also visible at all times. Clicking this opens an expanding form requesting a name and email address. 
+![](https://github.com/sampetchey/visit-richmond-hill/blob/main/assets/images/social-links.png)
+
+A button to subscribe to a VisitGuide newsletter is also visible at all times. Clicking this opens an expanding form requesting a name and email address.
+
+![](https://github.com/sampetchey/visit-richmond-hill/blob/main/assets/images/rh-form.png)
 
 The page layout is responsive to different screen sizes, breaking into columns for larger screens. The navigation bar information switches to icons for smaller screens. At the bottom of the scroll is a footer providing links to further administration details and terms and conditions.
 
+![](https://github.com/sampetchey/visit-richmond-hill/blob/main/assets/images/rh-home-mobile.png)
 
 ### Home - Top of the page
 
@@ -55,40 +62,53 @@ The scrolling panoramic image is the most prominent feature of the home, welcomi
 
 A logo for VisitGuide has been designed as a catchy way of showing the purpose of the brand. The colours are summery, like that of an icecream parlour. Deliberately, the logo is the only part of the site that is multi-coloured, so as to keep it standing out.
 
+![](https://github.com/sampetchey/visit-richmond-hill/blob/main/assets/images/rh-home.png)
 
 ### Places of Interest
 
-Scrolling down, the background colour gradually darkens so as to highlight new images of various points of interest. Thee include: Terrace View, RSPCA Monument, Terrace Field, Summer House, River Thames, Old Father Thames, Bulbous Betty and Terrace Gardens. Clicking on an image reveals curious information about each place, its history and location. 
+Scrolling down, the background colour gradually darkens so as to highlight new images of various points of interest. These include: Terrace View, RSPCA Monument, Terrace Field, Summer House, River Thames, Old Father Thames, Bulbous Betty and Terrace Gardens. Clicking on an image reveals curious information about each place, its history and location. 
 
+![](https://github.com/sampetchey/visit-richmond-hill/blob/main/assets/images/rh-poi.png)
+
+### Space and Image between Sections
+
+Between each section a new scrolling background hero image is revealed. This helps target different types of viewers. Those looking for information fast can use the anchor links to directly access sections. Those more curious can scroll through the images and absorb the characeristocs of the location. The site is built on the principle that images sell better than text.
+
+![](https://github.com/sampetchey/visit-richmond-hill/blob/main/assets/images/rh-cafe-hero-img.png)
 
 ### Food & Drink
 
-When scrolling downwards, before the Food & Drink section, a new panoramic is unveiled. This new image reveals the Orangery Cafe and garden. It helps define and divide the new section. 
+Three locations for food and drink are introduced: The Orangery, Hollyhock Cafe and The Roebuck Pub. Clicking on each one opens a modal containing information, a link to the menu (currently a placeholder '#' link) and a gallery.
 
-Three locations for food and drink are introduced: The Orangery, Hollyhock Cafe and The Roebuck Pub. Clicking on each one opens up a modal containing information, a link to the menu and a gallery of images.
+![](https://github.com/sampetchey/visit-richmond-hill/blob/main/assets/images/rh-foodanddrink-modal.png)
 
+###Decorative Bars
+
+To add interest and creativity, seperated horizontal bars provide a window to the previous background image. 
+
+![](https://github.com/sampetchey/visit-richmond-hill/blob/main/assets/images/rh-bars.png)
 
 ### Travel
 
-As before, to seperate the next section another new panoramic image of the Terrace Gardens appears before the Travel section. In this final section the information needs to be immediately visible, rather than clicked to find. Therefore each mode of travel (scooters, boat, bus & train and car) is contained in a simple box layout.
+In this final section the information needs to be immediately visible, rather than clicked to find. Therefore each mode of travel (scooters, boat, bus & train and car) is contained in a simple box layout.
 
+![](https://github.com/sampetchey/visit-richmond-hill/blob/main/assets/images/rh-travel.png)
 
 ### Subscribe to the Newsletter
 
-The subscription form obtains contact information of customers. The simple name and email address format make subscribing quick and easy. It enables future contact and promotions. 
- 
+The subscription form obtains contact information of customers. The simple name and email address format makes subscribing quick and easy. It enables future contact and promotions. 
+
+![](https://github.com/sampetchey/visit-richmond-hill/blob/main/assets/images/rh-form-mobile.png)
 
 ## Colour Scheme and Design
 
-A simple green/turquoise and white colour scheme was chosen to compliment the theme of nature and landscape. The contrast of dark green and white provides contrast where necessary, such as making text readable. A single colour theme also prevented colour clashes with images, ensuring they are not distracted from. 
-
+A simple green/turquoise and white colour scheme was chosen to compliment the theme of nature and landscape. The contrast of dark green and white provides contrast where necessary, such as making text readable. A single colour theme also prevented colour clashes with images, ensuring they are not distracted from. A gradient background color on each section was used to divide sections without them becoming blocky, whilst enhancing the foreground images. The gradient also provides a helpful downward projection. 
 
 ## Features to Implement in future
 
 - The type and amount of information in this version of the site is basic and can be expounded. Expanding boxes and modals could include maps and reviews. They could specifically highlight promotions available at the businesses. 
 - 'VisitGuide' could become and overarching brand for visitor guides. 'Kingfisher Guides' (https://kingfishervisitorguides.com/) is an example of what 'VisitGuide' could grow into becoming and was used as inspiration in constructing this site. A home directory of locations could be listed when 'VisitGuide' is clicked, leading  to places of interest across the globe, or within a defined area such as 'London VisitGuide'.
 - Additional sections of the webpage might include travel blogs, maps, advertising, local events and tourist reviews. 
-
 
 ## Technologies Used
 
@@ -100,11 +120,11 @@ A simple green/turquoise and white colour scheme was chosen to compliment the th
 - [FontAwesome](https://www.bootstrapcdn.com/fontawesome/)
     - The project also uses **Fontawesome** to provide icons in place of text for smaller screens 
 
-
 ## Testing 
 
-Testing information can be found in separate [TESTING.md file](TESTING.md)
+![](https://github.com/sampetchey/visit-richmond-hill/blob/main/assets/images/web-perf-audit.png)
 
+Testing information can be found in separate [TESTING.md file](TESTING.md)
 
 ## Deployment
 
@@ -120,7 +140,6 @@ To open this page to GitHub Pages from its [GitHub repository](https://github.co
 7. Scroll back down to the **GitHub Pages** section to retrieve the link to the deployed website.
 
 At the moment of submitting this Milestone project the Development Branch and Master Branch are identical. 
-
 
 ### How to run this project locally
 
@@ -148,9 +167,6 @@ git clone https://github.com/USERNAME/REPOSITORY
 ```
 7. Press Enter. Your local clone will be created.
 
-Further reading and troubleshooting on cloning a repository from GitHub [here](https://help.github.com/en/articles/cloning-a-repository).
-
-
 ## Credits
 
 ### Content
@@ -158,19 +174,15 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 - The template for a popup form was taken from https://www.w3schools.com/howto/howto_js_popup_form.asp 
 - The Bootstrap modal code used in the Food & Drink section was adjusted from https://www.w3schools.com/bootstrap/bootstrap_modal.asp#:~:text=To%20trigger%20the%20modal%20window,modal%22%20opens%20the%20modal%20window
 - The four squares grid layout in the travel section was adjusted from https://get.foundation/building-blocks/blocks/four-squares-layout.html
-- The text and information on the site was written and produced by Sam Petchey using information found on tourist information plaques and Richmond Hill.
-
+- The text and information on the site was written by Sam Petchey using information found on tourist information plaques at Richmond Hill.
+- The VisitGuide logo was created by Sam Petchey using Canva.
 
 ### Media
-- All site photos for the site were taken by Sam Petchey in 2022.
+- All site photos for the site were taken on location at Richmond Hill by Sam Petchey in 2022.
 - Photo size, colour, saturation and design were adjusted using Apple Preview.
 
-
 ### Acknowledgements
-
 - The inspiration for this website came from personal trips to Richmond Hill.
 
-
 ### Disclaimer
-
 This website has been created to demonstrate html and css coding skills. It is not sponsored by any business or authority associated with Richmond. 
